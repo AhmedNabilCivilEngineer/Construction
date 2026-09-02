@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eng. Ahmed Nabil — Construction & Technical Office Engineer</title>
     
-    <!-- Advanced SEO & Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -46,17 +45,17 @@
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
 
         :root {
-            --bg-base: #111827;
-            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
-            --card-glass: rgba(30, 41, 59, 0.7);
-            --card-border: rgba(245, 158, 11, 0.2);
-            --card-hover: rgba(30, 41, 59, 0.95);
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent-gold: #f59e0b;
-            --accent-amber: #fbbf24;
-            --accent-cyan: #38bdf8;
-            --glow-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            --bg-base: #fdfbf7;
+            --bg-gradient: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+            --card-glass: rgba(255, 255, 255, 0.85);
+            --card-border: rgba(217, 119, 6, 0.2);
+            --card-hover: rgba(255, 255, 255, 1);
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent-gold: #d97706;
+            --accent-amber: #b45309;
+            --accent-cyan: #0284c7;
+            --glow-shadow: 0 25px 50px -12px rgba(217, 119, 6, 0.1);
         }
 
         * {
@@ -80,12 +79,12 @@
             overflow-x: hidden;
         }
 
-        /* Ambient dramatic gold & cyan atmospheric glow */
+        /* Ambient soft warm atmospheric glow */
         .bg-glow-1 {
             position: fixed;
             width: 500px;
             height: 500px;
-            background: rgba(245, 158, 11, 0.05);
+            background: rgba(217, 119, 6, 0.05);
             filter: blur(140px);
             border-radius: 50%;
             z-index: 0;
@@ -98,7 +97,7 @@
             position: fixed;
             width: 500px;
             height: 500px;
-            background: rgba(56, 189, 248, 0.05);
+            background: rgba(2, 132, 199, 0.04);
             filter: blur(140px);
             border-radius: 50%;
             z-index: 0;
@@ -121,7 +120,7 @@
             padding: 1.1rem 2.25rem;
             border-radius: 18px;
             margin-bottom: 2.25rem;
-            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(217, 119, 6, 0.08);
             z-index: 10;
         }
 
@@ -129,7 +128,7 @@
             font-family: 'Outfit', sans-serif;
             font-weight: 800;
             font-size: 1.2rem;
-            color: #ffffff;
+            color: var(--text-main);
             letter-spacing: -0.3px;
             display: flex;
             align-items: center;
@@ -194,7 +193,7 @@
             align-items: flex-start;
             flex-wrap: wrap;
             gap: 1.75rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(217, 119, 6, 0.15);
             padding-bottom: 2.75rem;
         }
 
@@ -203,9 +202,9 @@
             font-size: 2.75rem;
             font-weight: 800;
             letter-spacing: -0.8px;
-            color: #ffffff;
+            color: var(--text-main);
             margin-bottom: 0.35rem;
-            background: linear-gradient(135deg, #ffffff 30%, var(--accent-amber) 100%);
+            background: linear-gradient(135deg, #1e293b 30%, var(--accent-amber) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -232,21 +231,21 @@
             display: inline-flex;
             align-items: center;
             gap: 0.65rem;
-            background: rgba(245, 158, 11, 0.1);
+            background: rgba(217, 119, 6, 0.08);
             color: var(--accent-amber);
             padding: 0.7rem 1.35rem;
             border-radius: 50px;
             font-size: 0.9rem;
             font-weight: 600;
-            border: 1px solid rgba(245, 158, 11, 0.25);
+            border: 1px solid rgba(217, 119, 6, 0.2);
             text-decoration: none;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .email-badge:hover {
-            background: rgba(245, 158, 11, 0.2);
+            background: rgba(217, 119, 6, 0.15);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.2);
+            box-shadow: 0 8px 25px rgba(217, 119, 6, 0.15);
         }
 
         /* Sections Layout */
@@ -275,7 +274,7 @@
             content: '';
             flex: 1;
             height: 1px;
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(217, 119, 6, 0.15);
         }
 
         .credentials-grid {
@@ -286,8 +285,8 @@
 
         /* Precision Credential Cards */
         .credential-card {
-            background: rgba(15, 23, 42, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(217, 119, 6, 0.12);
             border-radius: 18px;
             padding: 1.5rem 1.75rem;
             display: flex;
@@ -296,7 +295,7 @@
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
         }
 
         .credential-card::before {
@@ -311,13 +310,13 @@
 
         .credential-card.edu-reg::before { background: var(--accent-gold); }
         .credential-card.accred::before { background: var(--accent-cyan); }
-        .credential-card.global::before { background: #ec4899; }
+        .credential-card.global::before { background: #db2777; }
 
         .credential-card:hover {
             transform: translateX(6px);
             background: var(--card-hover);
-            border-color: rgba(245, 158, 11, 0.35);
-            box-shadow: 0 14px 35px -10px rgba(0, 0, 0, 0.4);
+            border-color: rgba(217, 119, 6, 0.35);
+            box-shadow: 0 14px 35px -10px rgba(217, 119, 6, 0.12);
         }
 
         .card-icon-wrapper {
@@ -336,9 +335,9 @@
             transform: scale(1.08);
         }
 
-        .edu-reg .card-icon-wrapper { background: rgba(245, 158, 11, 0.1); color: var(--accent-gold); }
-        .accred .card-icon-wrapper { background: rgba(56, 189, 248, 0.1); color: var(--accent-cyan); }
-        .global .card-icon-wrapper { background: rgba(236, 72, 153, 0.1); color: #ec4899; }
+        .edu-reg .card-icon-wrapper { background: rgba(217, 119, 6, 0.08); color: var(--accent-gold); }
+        .accred .card-icon-wrapper { background: rgba(2, 132, 199, 0.08); color: var(--accent-cyan); }
+        .global .card-icon-wrapper { background: rgba(219, 39, 119, 0.08); color: #db2777; }
 
         .card-content {
             flex: 1;
@@ -349,7 +348,7 @@
             font-size: 1.15rem;
             font-weight: 700;
             margin-bottom: 0.3rem;
-            color: #ffffff;
+            color: var(--text-main);
             letter-spacing: -0.2px;
         }
 
@@ -370,9 +369,9 @@
             letter-spacing: 0.5px;
         }
 
-        .edu-reg .tag { background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); }
-        .accred .tag { background: rgba(56, 189, 248, 0.15); color: var(--accent-cyan); }
-        .global .tag { background: rgba(236, 72, 153, 0.15); color: #f472b6; }
+        .edu-reg .tag { background: rgba(217, 119, 6, 0.1); color: var(--accent-amber); }
+        .accred .tag { background: rgba(2, 132, 199, 0.1); color: var(--accent-cyan); }
+        .global .tag { background: rgba(219, 39, 119, 0.1); color: #be185d; }
 
         /* Footer Element */
         footer {
@@ -380,7 +379,7 @@
             margin-top: 3.75rem;
             font-size: 0.85rem;
             color: var(--text-muted);
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-top: 1px solid rgba(217, 119, 6, 0.15);
             padding-top: 2.25rem;
             letter-spacing: 0.3px;
         }
@@ -404,11 +403,9 @@
 </head>
 <body>
 
-    <!-- Ambient Glow Layout Enhancements -->
     <div class="bg-glow-1"></div>
     <div class="bg-glow-2"></div>
 
-    <!-- Navigation Header -->
     <nav class="site-nav">
         <div class="nav-logo">
             <span>⚡</span> Eng. Ahmed Nabil
@@ -419,10 +416,8 @@
         </ul>
     </nav>
 
-    <!-- Main Container Card -->
     <div class="container" id="credentials">
         
-        <!-- Header Hero Profile Info -->
         <header>
             <div class="header-info">
                 <h1>Eng. Ahmed Nabil</h1>
@@ -436,7 +431,6 @@
             </a>
         </header>
 
-        <!-- Section 1: Academic Foundation & Licensure -->
         <section class="qualification-section">
             <h2 class="section-title">Academic Foundation & Licensure</h2>
             <div class="credentials-grid">
@@ -471,7 +465,6 @@
             </div>
         </section>
 
-        <!-- Section 2: International Accreditations -->
         <section class="qualification-section">
             <h2 class="section-title">International Accreditations</h2>
             <div class="credentials-grid">
@@ -497,7 +490,6 @@
             </div>
         </section>
 
-        <!-- Section 3: Global Affiliations -->
         <section class="qualification-section">
             <h2 class="section-title">Global Affiliations</h2>
             <div class="credentials-grid">
@@ -514,7 +506,6 @@
             </div>
         </section>
 
-        <!-- Footer Section -->
         <footer>
             <p>&copy; 2026 Eng. Ahmed Nabil. All rights reserved.</p>
             <p>Credentials verified and published based on official academic and professional documentation.</p>
