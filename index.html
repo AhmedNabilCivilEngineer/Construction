@@ -1,517 +1,201 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eng. Ahmed Nabil — Construction & Technical Office Engineer</title>
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ahmed Nabil",
-      "honorificPrefix": "Eng.",
-      "jobTitle": "Construction and Technical Office Engineer",
-      "email": "mypc1239@outlook.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Alexandria",
-        "addressCountry": "Egypt"
-      },
-      "alumniOf": [
-        {
-          "@type": "EducationalOrganization",
-          "name": "Arab Academy for Science, Technology and Maritime Transport"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "Alexandria Private Language School"
-        }
-      ],
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "name": "Egyptian Syndicate of Engineers"
-        },
-        {
-          "@type": "Organization",
-          "name": "Institution of Civil Engineers (ICE)"
-        }
-      ]
-    }
-    </script>
-
+    <title>Eng. Ahmed Nabil - Professional Profile</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
-
-        :root {
-            --bg-base: #fdfbf7;
-            --bg-gradient: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
-            --card-glass: rgba(255, 255, 255, 0.85);
-            --card-border: rgba(217, 119, 6, 0.2);
-            --card-hover: rgba(255, 255, 255, 1);
-            --text-main: #1e293b;
-            --text-muted: #64748b;
-            --accent-gold: #d97706;
-            --accent-amber: #b45309;
-            --accent-cyan: #0284c7;
-            --glow-shadow: 0 25px 50px -12px rgba(217, 119, 6, 0.1);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-        }
-
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background: var(--bg-base);
-            background-image: var(--bg-gradient);
-            color: var(--text-main);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 2.5rem 1.25rem 4rem 1.25rem;
-            overflow-x: hidden;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f9fa;
+            color: #333333;
+            margin: 0;
+            padding: 40px 20px;
         }
-
-        /* Ambient soft warm atmospheric glow */
-        .bg-glow-1 {
-            position: fixed;
-            width: 500px;
-            height: 500px;
-            background: rgba(217, 119, 6, 0.05);
-            filter: blur(140px);
-            border-radius: 50%;
-            z-index: 0;
-            top: 5%;
-            left: 5%;
-            pointer-events: none;
-        }
-
-        .bg-glow-2 {
-            position: fixed;
-            width: 500px;
-            height: 500px;
-            background: rgba(2, 132, 199, 0.04);
-            filter: blur(140px);
-            border-radius: 50%;
-            z-index: 0;
-            bottom: 5%;
-            right: 5%;
-            pointer-events: none;
-        }
-
-        /* Top Navigation Header Bar */
-        .site-nav {
-            width: 100%;
-            max-width: 860px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--card-glass);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid var(--card-border);
-            padding: 1.1rem 2.25rem;
-            border-radius: 18px;
-            margin-bottom: 2.25rem;
-            box-shadow: 0 10px 30px -10px rgba(217, 119, 6, 0.08);
-            z-index: 10;
-        }
-
-        .nav-logo {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 800;
-            font-size: 1.2rem;
-            color: var(--text-main);
-            letter-spacing: -0.3px;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .nav-logo span {
-            color: var(--accent-gold);
-            animation: pulse-icon 2s infinite ease-in-out;
-        }
-
-        @keyframes pulse-icon {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.15); }
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.75rem;
-            list-style: none;
-            align-items: center;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            font-size: 0.88rem;
-            font-weight: 600;
-            color: var(--text-muted);
-            transition: color 0.2s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-gold);
-        }
-
-        /* Main Wrapper Container Card */
         .container {
-            width: 100%;
-            max-width: 860px;
-            background: var(--card-glass);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--card-border);
-            border-radius: 28px;
-            padding: 3.5rem;
-            box-shadow: var(--glow-shadow);
-            position: relative;
-            z-index: 1;
-            animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
-
-        @keyframes fade-in-up {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Header Hero Block */
         header {
-            margin-bottom: 3.25rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 1.75rem;
-            border-bottom: 1px solid rgba(217, 119, 6, 0.15);
-            padding-bottom: 2.75rem;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 20px;
+            margin-bottom: 35px;
         }
-
-        .header-info h1 {
-            font-family: 'Outfit', sans-serif;
-            font-size: 2.75rem;
-            font-weight: 800;
-            letter-spacing: -0.8px;
-            color: var(--text-main);
-            margin-bottom: 0.35rem;
-            background: linear-gradient(135deg, #1e293b 30%, var(--accent-amber) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        h1 {
+            color: #003366;
+            margin: 0 0 5px 0;
+            font-size: 2.5rem;
+            font-weight: 700;
         }
-
-        .subtitle {
+        .tagline {
+            font-size: 1.25rem;
+            color: #555555;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        .contact-details {
             font-size: 0.95rem;
-            color: var(--accent-gold);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 0.8rem;
+            color: #666666;
         }
-
-        .location-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.45rem;
-            font-size: 0.88rem;
-            color: var(--text-muted);
-            font-weight: 600;
+        .contact-details span {
+            margin-right: 25px;
         }
-
-        .email-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.65rem;
-            background: rgba(217, 119, 6, 0.08);
-            color: var(--accent-amber);
-            padding: 0.7rem 1.35rem;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            border: 1px solid rgba(217, 119, 6, 0.2);
+        .contact-details a {
+            color: #003366;
             text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        .email-badge:hover {
-            background: rgba(217, 119, 6, 0.15);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(217, 119, 6, 0.15);
+        .contact-details a:hover {
+            text-decoration: underline;
         }
-
-        /* Sections Layout */
-        .qualification-section {
-            margin-bottom: 3rem;
+        section {
+            margin-bottom: 35px;
         }
-
-        .qualification-section:last-of-type {
-            margin-bottom: 0;
-        }
-
-        .section-title {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.1rem;
-            color: var(--text-muted);
+        h2 {
+            color: #003366;
+            font-size: 1.4rem;
             text-transform: uppercase;
-            letter-spacing: 1.2px;
-            margin-bottom: 1.35rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 0.85rem;
-        }
-
-        .section-title::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: rgba(217, 119, 6, 0.15);
-        }
-
-        .credentials-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 1.15rem;
-        }
-
-        /* Precision Credential Cards */
-        .credential-card {
-            background: rgba(255, 255, 255, 0.75);
-            border: 1px solid rgba(217, 119, 6, 0.12);
-            border-radius: 18px;
-            padding: 1.5rem 1.75rem;
-            display: flex;
-            align-items: center;
-            gap: 1.35rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
-        }
-
-        .credential-card::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            transition: width 0.3s ease;
-        }
-
-        .credential-card.edu-reg::before { background: var(--accent-gold); }
-        .credential-card.accred::before { background: var(--accent-cyan); }
-        .credential-card.global::before { background: #db2777; }
-
-        .credential-card:hover {
-            transform: translateX(6px);
-            background: var(--card-hover);
-            border-color: rgba(217, 119, 6, 0.35);
-            box-shadow: 0 14px 35px -10px rgba(217, 119, 6, 0.12);
-        }
-
-        .card-icon-wrapper {
-            width: 56px;
-            height: 56px;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            flex-shrink: 0;
-            transition: transform 0.3s ease;
-        }
-
-        .credential-card:hover .card-icon-wrapper {
-            transform: scale(1.08);
-        }
-
-        .edu-reg .card-icon-wrapper { background: rgba(217, 119, 6, 0.08); color: var(--accent-gold); }
-        .accred .card-icon-wrapper { background: rgba(2, 132, 199, 0.08); color: var(--accent-cyan); }
-        .global .card-icon-wrapper { background: rgba(219, 39, 119, 0.08); color: #db2777; }
-
-        .card-content {
-            flex: 1;
-        }
-
-        .card-content h3 {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.15rem;
-            font-weight: 700;
-            margin-bottom: 0.3rem;
-            color: var(--text-main);
-            letter-spacing: -0.2px;
-        }
-
-        .card-content p {
-            font-size: 0.92rem;
-            color: var(--text-muted);
-            line-height: 1.5;
-            margin-bottom: 0.65rem;
-        }
-
-        .tag {
-            display: inline-block;
-            font-size: 0.72rem;
-            font-weight: 700;
-            padding: 0.28rem 0.75rem;
-            border-radius: 6px;
-            text-transform: uppercase;
+            border-left: 4px solid #003366;
+            padding-left: 12px;
+            margin-bottom: 20px;
             letter-spacing: 0.5px;
         }
-
-        .edu-reg .tag { background: rgba(217, 119, 6, 0.1); color: var(--accent-amber); }
-        .accred .tag { background: rgba(2, 132, 199, 0.1); color: var(--accent-cyan); }
-        .global .tag { background: rgba(219, 39, 119, 0.1); color: #be185d; }
-
-        /* Footer Element */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .card {
+            background: #fcfdfe;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-title {
+            font-size: 1.1rem;
+            color: #1a202c;
+            margin: 0 0 8px 0;
+            font-weight: 600;
+        }
+        .card-institution {
+            font-size: 0.95rem;
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+        .card-badge {
+            align-self: flex-start;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            background-color: #ebf8ff;
+            color: #2b6cb0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
         footer {
-            text-align: center;
-            margin-top: 3.75rem;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
             font-size: 0.85rem;
-            color: var(--text-muted);
-            border-top: 1px solid rgba(217, 119, 6, 0.15);
-            padding-top: 2.25rem;
-            letter-spacing: 0.3px;
-        }
-
-        footer p {
-            margin-bottom: 0.45rem;
-        }
-
-        /* Responsive Breakpoints Optimization */
-        @media (max-width: 768px) {
-            body { padding: 1rem 0.85rem 3rem 0.85rem; }
-            .site-nav { padding: 0.9rem 1.35rem; margin-bottom: 1.5rem; }
-            .container { padding: 2rem; border-radius: 22px; }
-            header { flex-direction: column; align-items: flex-start; gap: 1.3rem; }
-            .header-info h1 { font-size: 2.25rem; }
-            .credential-card { flex-direction: column; align-items: flex-start; gap: 1.1rem; padding: 1.35rem; }
-            .credential-card::before { width: 100%; height: 4px; top: 0; bottom: auto; }
-            .credential-card:hover { transform: translateY(-3px); }
+            color: #718096;
+            text-align: center;
+            line-height: 1.8;
         }
     </style>
 </head>
 <body>
 
-    <div class="bg-glow-1"></div>
-    <div class="bg-glow-2"></div>
-
-    <nav class="site-nav">
-        <div class="nav-logo">
-            <span>⚡</span> Eng. Ahmed Nabil
+<div class="container">
+    <header>
+        <h1>Eng. Ahmed Nabil</h1>
+        <div class="tagline">Construction & Technical Office Engineer</div>
+        <div class="contact-details">
+            <span>Location: Alexandria, Egypt</span>
+            <span>Email: <a href="mailto:mypc1239@outlook.com">mypc1239@outlook.com</a></span>
         </div>
-        <ul class="nav-links">
-            <li><a href="#credentials">Credentials</a></li>
-            <li><a href="mailto:mypc1239@outlook.com">Contact</a></li>
-        </ul>
-    </nav>
+    </header>
 
-    <div class="container" id="credentials">
-        
-        <header>
-            <div class="header-info">
-                <h1>Eng. Ahmed Nabil</h1>
-                <div class="subtitle">Construction & Technical Office Engineer</div>
-                <div class="location-tag">
-                    <span>📍</span> Alexandria, Egypt
-                </div>
-            </div>
-            <a href="mailto:mypc1239@outlook.com" class="email-badge">
-                <span>✉️</span> mypc1239@outlook.com
-            </a>
-        </header>
-
-        <section class="qualification-section">
-            <h2 class="section-title">Academic Foundation & Licensure</h2>
-            <div class="credentials-grid">
-                
-                <div class="credential-card edu-reg">
-                    <div class="card-icon-wrapper">🎓</div>
-                    <div class="card-content">
-                        <h3>American High School Diploma</h3>
-                        <p>Alexandria Private Language School — American Division</p>
-                        <span class="tag">Secondary Education</span>
+    <main>
+        <section>
+            <h2>Academic Foundation & Licensure</h2>
+            <div class="grid">
+                <div class="card">
+                    <div>
+                        <div class="card-title">American High School Diploma</div>
+                        <div class="card-institution">Alexandria Private Language School — American Division</div>
                     </div>
+                    <div class="card-badge">Secondary Education</div>
                 </div>
-
-                <div class="credential-card edu-reg">
-                    <div class="card-icon-wrapper">🏛️</div>
-                    <div class="card-content">
-                        <h3>B.Sc. in Construction and Building Engineering</h3>
-                        <p>Arab Academy for Science, Technology and Maritime Transport (AASTMT)</p>
-                        <span class="tag">Higher Education</span>
+                <div class="card">
+                    <div>
+                        <div class="card-title">B.Sc. in Construction and Building Engineering</div>
+                        <div class="card-institution">Arab Academy for Science, Technology and Maritime Transport (AASTMT)</div>
                     </div>
+                    <div class="card-badge">Higher Education</div>
                 </div>
-
-                <div class="credential-card edu-reg">
-                    <div class="card-icon-wrapper">📜</div>
-                    <div class="card-content">
-                        <h3>Egyptian Syndicate of Engineers (EES) Membership</h3>
-                        <p>Registered Professional Member — Civil Department, Alexandria Branch</p>
-                        <span class="tag">Professional Licensure</span>
+                <div class="card">
+                    <div>
+                        <div class="card-title">Egyptian Syndicate of Engineers (EES) Membership</div>
+                        <div class="card-institution">Registered Professional Member — Civil Department, Alexandria Branch</div>
                     </div>
+                    <div class="card-badge">Professional Licensure</div>
                 </div>
-
             </div>
         </section>
 
-        <section class="qualification-section">
-            <h2 class="section-title">International Accreditations</h2>
-            <div class="credentials-grid">
-                
-                <div class="credential-card accred">
-                    <div class="card-icon-wrapper">✅</div>
-                    <div class="card-content">
-                        <h3>ABET Engineering Accreditation Commission</h3>
-                        <p>Program criteria for Construction Engineering met by B.Sc. at AASTMT</p>
-                        <span class="tag">Global Standard</span>
+        <section>
+            <h2>International Accreditations</h2>
+            <div class="grid">
+                <div class="card">
+                    <div>
+                        <div class="card-title">ABET Engineering Accreditation Commission</div>
+                        <div class="card-institution">Program criteria for Construction Engineering met by B.Sc. at AASTMT</div>
                     </div>
+                    <div class="card-badge">Global Standard</div>
                 </div>
-
-                <div class="credential-card accred">
-                    <div class="card-icon-wrapper">⚖️</div>
-                    <div class="card-content">
-                        <h3>Danish Equivalent Bachelor of Engineering</h3>
-                        <p>Credential assessment evaluated in level to a Danish B.Eng. in Civil Engineering</p>
-                        <span class="tag">EU Equivalency</span>
+                <div class="card">
+                    <div>
+                        <div class="card-title">Danish Equivalent Bachelor of Engineering</div>
+                        <div class="card-institution">Credential assessment evaluated in level to a Danish B.Eng. in Civil Engineering</div>
                     </div>
+                    <div class="card-badge">EU Equivalency</div>
                 </div>
-
             </div>
         </section>
 
-        <section class="qualification-section">
-            <h2 class="section-title">Global Affiliations</h2>
-            <div class="credentials-grid">
-                
-                <div class="credential-card global">
-                    <div class="card-icon-wrapper">⚡</div>
-                    <div class="card-content">
-                        <h3>Graduate Member, Institution of Civil Engineers (GMICE)</h3>
-                        <p>Institution of Civil Engineers (ICE) — Educational base requirements fully met</p>
-                        <span class="tag">UK & International</span>
+        <section>
+            <h2>Global Affiliations</h2>
+            <div class="grid">
+                <div class="card">
+                    <div>
+                        <div class="card-title">Graduate Member, Institution of Civil Engineers (GMICE)</div>
+                        <div class="card-institution">Institution of Civil Engineers (ICE) — Educational base requirements fully met</div>
                     </div>
+                    <div class="card-badge">UK & International</div>
                 </div>
-
             </div>
         </section>
+    </main>
 
-        <footer>
-            <p>&copy; 2026 Eng. Ahmed Nabil. All rights reserved.</p>
-            <p>Credentials verified and published based on official academic and professional documentation.</p>
-        </footer>
-
-    </div>
+    <footer>
+        <p>&copy; 2026 Eng. Ahmed Nabil. All rights reserved.</p>
+        <p>Credentials verified and published based on official academic and professional documentation.</p>
+    </footer>
+</div>
 
 </body>
 </html>
