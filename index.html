@@ -3,498 +3,648 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Private Engineering Lessons - Eng. Ahmed N. Youssef</title>
+    <title>Private Engineering Software Lessons - Eng. Ahmed N. Youssef</title>
     <style>
         :root {
-            --bg-main: #0b0f19;
-            --bg-card: #151c2c;
-            --bg-card-hover: #1e293b;
-            --accent-blue: #38bdf8;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-element: #334155;
+            --primary-blue: #38bdf8;
             --accent-green: #22c55e;
-            --accent-indigo: #6366f1;
-            --text-light: #f8fafc;
-            --text-muted: #94a3b8;
+            --accent-purple: #818cf8;
+            --whatsapp: #25d366;
+            --facebook: #1877f2;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
             --border-color: #334155;
-            --facebook-blue: #1877f2;
         }
 
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
         }
 
         body {
-            background-color: var(--bg-main);
-            color: var(--text-light);
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
             line-height: 1.6;
-            min-height: 100vh;
         }
 
-        /* Hero Banner */
-        .hero {
-            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+        header {
+            background: linear-gradient(180deg, #020617 0%, var(--bg-dark) 100%);
             border-bottom: 1px solid var(--border-color);
-            padding: 4rem 1.5rem 3rem;
+            padding: 3rem 1rem 2rem;
             text-align: center;
         }
 
-        .hero-badge {
+        header h1 {
+            font-size: 2.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .bundle-badge {
             display: inline-block;
             background: rgba(56, 189, 248, 0.1);
-            color: var(--accent-blue);
-            border: 1px solid rgba(56, 189, 248, 0.3);
-            padding: 0.4rem 1.2rem;
-            border-radius: 9999px;
+            border: 1px solid var(--primary-blue);
+            color: var(--primary-blue);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
             font-size: 0.85rem;
             font-weight: 600;
             margin-bottom: 1rem;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.5px;
         }
 
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, #ffffff, #94a3b8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero p {
-            color: var(--text-muted);
-            max-width: 750px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-        }
-
-        /* Layout Grid */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2.5rem 1.5rem;
+            padding: 2rem 1rem;
         }
 
-        /* Profile Card */
-        .instructor-bar {
+        /* Instructor Profile Section */
+        .instructor-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 2rem;
-            margin-bottom: 2.5rem;
+            border-radius: 12px;
+            padding: 1.75rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
         }
 
-        .instructor-info-top {
+        .instructor-header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+            margin-bottom: 1.25rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             gap: 1rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border-color);
         }
 
-        .instructor-info-top h2 {
-            font-size: 1.8rem;
-            color: var(--text-light);
+        .instructor-name {
+            font-size: 1.75rem;
+            color: var(--text-primary);
         }
 
-        .contact-pills {
+        .instructor-contact {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
             display: flex;
+            align-items: center;
             gap: 0.75rem;
             flex-wrap: wrap;
         }
 
-        .pill {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--border-color);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-size: 0.875rem;
-            color: var(--text-muted);
+        .instructor-contact a {
+            color: var(--primary-blue);
             text-decoration: none;
-            transition: all 0.2s ease;
+            font-weight: 500;
         }
 
-        .pill:hover {
-            border-color: var(--accent-blue);
-            color: var(--text-light);
+        .whatsapp-link {
+            color: var(--accent-green) !important;
+            font-weight: 600 !important;
         }
 
-        .pill.whatsapp:hover { border-color: var(--accent-green); color: var(--accent-green); }
-        .pill.facebook:hover { border-color: var(--facebook-blue); color: var(--facebook-blue); }
+        .facebook-link {
+            color: #60a5fa !important;
+            font-weight: 600 !important;
+        }
 
-        .credentials-row {
+        .credentials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 1rem;
         }
 
-        .cred-box {
-            background: rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+        .cred-item {
+            background: rgba(15, 23, 42, 0.6);
             padding: 1rem;
-            border-radius: 10px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
         }
 
-        .cred-box .tag {
-            font-size: 0.7rem;
-            color: var(--accent-blue);
+        .cred-tag {
+            font-size: 0.75rem;
             text-transform: uppercase;
-            font-weight: 700;
+            font-weight: bold;
+            color: var(--primary-blue);
+            display: inline-block;
+            margin-bottom: 0.25rem;
         }
 
-        .cred-box .title {
-            font-size: 0.95rem;
+        .cred-title {
             font-weight: 600;
-            margin: 0.2rem 0;
+            color: var(--text-primary);
+            font-size: 0.95rem;
         }
 
-        .cred-box .sub {
-            font-size: 0.8rem;
-            color: var(--text-muted);
+        .cred-sub {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
         }
 
-        /* Dashboard Sidebar + Content Layout */
-        .dashboard-grid {
+        /* Dashboard Grid Layout */
+        .dashboard-layout {
             display: grid;
             grid-template-columns: 280px 1fr;
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         @media (max-width: 850px) {
-            .dashboard-grid {
+            .dashboard-layout {
                 grid-template-columns: 1fr;
             }
         }
 
         /* Sidebar Navigation */
-        .sidebar {
+        .sidebar-nav {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
         }
 
-        .nav-btn {
-            background: var(--bg-card);
+        .tab-btn {
+            background-color: var(--bg-card);
             border: 1px solid var(--border-color);
-            color: var(--text-muted);
             padding: 1rem 1.25rem;
-            border-radius: 12px;
-            text-align: left;
             font-size: 0.95rem;
             font-weight: 600;
+            border-radius: 8px;
             cursor: pointer;
             transition: all 0.2s ease;
+            color: var(--text-secondary);
+            text-align: left;
         }
 
-        .nav-btn:hover {
-            background: var(--bg-card-hover);
-            color: var(--text-light);
+        .tab-btn:hover {
+            background-color: var(--bg-element);
+            color: var(--text-primary);
         }
 
-        .nav-btn.active {
-            background: var(--accent-indigo);
-            border-color: var(--accent-indigo);
+        .tab-btn.active {
+            background-color: var(--accent-purple);
+            border-color: var(--accent-purple);
             color: #ffffff;
-            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 4px 12px rgba(129, 140, 248, 0.25);
         }
 
-        /* Course Panel Content */
-        .panel {
+        /* Content Panel */
+        .tab-content {
             display: none;
             background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
+            border-radius: 12px;
             padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+            border: 1px solid var(--border-color);
         }
 
-        .panel.active {
+        .tab-content.active {
             display: block;
         }
 
-        .panel-header {
+        .course-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
             border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
             flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .panel-header h3 {
-            font-size: 1.5rem;
-            color: var(--text-light);
-        }
-
-        .price-badge {
-            background: rgba(34, 197, 94, 0.1);
-            color: var(--accent-green);
-            border: 1px solid rgba(34, 197, 94, 0.3);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-weight: 700;
-            font-size: 0.95rem;
-        }
-
-        .syllabus-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0 2rem;
-        }
-
-        .syllabus-card {
-            background: rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 1rem 1.25rem;
-            border-radius: 10px;
-            display: flex;
-            align-items: flex-start;
             gap: 0.75rem;
         }
 
-        .syllabus-card::before {
-            content: "✦";
-            color: var(--accent-blue);
-            font-size: 1rem;
-            line-height: 1.4;
+        .course-title {
+            font-size: 1.5rem;
+            color: var(--text-primary);
         }
 
-        .syllabus-card span {
+        .badge {
+            background-color: rgba(129, 140, 248, 0.15);
+            color: var(--accent-purple);
+            border: 1px solid rgba(129, 140, 248, 0.3);
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+            background: rgba(15, 23, 42, 0.6);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .detail-item strong {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .detail-item span {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+
+        .syllabus {
+            margin-bottom: 2rem;
+        }
+
+        .syllabus h3 {
+            margin-bottom: 1.25rem;
+            color: var(--text-primary);
+            font-size: 1.15rem;
+        }
+
+        .syllabus ul {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.85rem;
+        }
+
+        .syllabus li {
+            position: relative;
+            padding: 0.85rem 1rem 0.85rem 2.25rem;
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
             font-size: 0.9rem;
             color: #cbd5e1;
         }
 
-        .book-btn {
+        .syllabus li::before {
+            content: "✓";
+            position: absolute;
+            left: 0.85rem;
+            top: 0.85rem;
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+
+        .cta-btn {
             display: block;
             width: 100%;
             text-align: center;
-            background: linear-gradient(135deg, var(--accent-blue), #2563eb);
+            background: linear-gradient(135deg, var(--accent-purple), #4f46e5);
             color: #ffffff;
             padding: 1rem;
-            border-radius: 10px;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
+            font-weight: 600;
+            font-size: 1.05rem;
             transition: opacity 0.2s ease;
         }
 
-        .book-btn:hover {
+        .cta-btn:hover {
             opacity: 0.9;
         }
 
-        /* Banner Box */
-        .action-banner {
-            background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
-            border: 1px solid var(--accent-indigo);
-            border-radius: 16px;
-            padding: 2.5rem 2rem;
-            margin-top: 3rem;
+        .bundle-banner {
+            background: linear-gradient(135deg, #020617, #1e1b4b);
+            border: 1px solid var(--accent-purple);
+            color: #ffffff;
+            border-radius: 12px;
+            padding: 2.5rem 1.5rem;
+            margin-top: 2.5rem;
             text-align: center;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
         }
 
-        .action-banner h2 {
-            font-size: 1.8rem;
+        .bundle-banner h2 {
+            font-size: 1.75rem;
             margin-bottom: 0.5rem;
         }
 
-        .action-banner p {
-            color: var(--text-muted);
+        .bundle-banner p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bundle-price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent-green);
             margin-bottom: 1.5rem;
         }
 
-        .action-buttons {
+        .btn-group {
             display: flex;
             justify-content: center;
             gap: 1rem;
             flex-wrap: wrap;
         }
 
-        .btn-act {
-            padding: 0.9rem 1.5rem;
+        .bundle-btn {
+            background-color: var(--whatsapp);
+            color: #ffffff;
+            padding: 0.85rem 1.5rem;
             border-radius: 8px;
-            font-weight: 700;
             text-decoration: none;
+            font-weight: bold;
             font-size: 0.95rem;
-            transition: transform 0.2s ease;
+            display: inline-block;
+            transition: opacity 0.2s ease;
         }
 
-        .btn-act:hover {
-            transform: translateY(-2px);
+        .fb-btn {
+            background-color: var(--facebook);
+            color: #ffffff;
+            padding: 0.85rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            display: inline-block;
+            transition: opacity 0.2s ease;
         }
 
-        .btn-act.wa { background: var(--accent-green); color: #ffffff; }
-        .btn-act.fb { background: var(--facebook-blue); color: #ffffff; }
-        .btn-act.email { background: var(--accent-blue); color: #0f172a; }
+        .email-btn {
+            background-color: var(--primary-blue);
+            color: #0f172a;
+            padding: 0.85rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            display: inline-block;
+            transition: opacity 0.2s ease;
+        }
+
+        .bundle-btn:hover, .fb-btn:hover, .email-btn:hover {
+            opacity: 0.9;
+        }
 
         footer {
             text-align: center;
-            padding: 2.5rem 1rem;
-            color: var(--text-muted);
-            font-size: 0.85rem;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
             border-top: 1px solid var(--border-color);
-            margin-top: 4rem;
+            margin-top: 3rem;
         }
 
-        footer a { color: var(--accent-blue); text-decoration: none; }
+        footer a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
-    <header class="hero">
-        <span class="hero-badge">Private 1-on-1 Mentorship</span>
-        <h1>Integrated Engineering & Geotechnical Track</h1>
-        <p>Master practical workflows: AutoCAD drafting, Revit 3D modeling, Primavera P6 scheduling, Robot FEA analysis, and PLAXIS 3D bearing capacity & settlement simulations.</p>
+    <header>
+        <span class="bundle-badge">Private 1-on-1 Lessons</span>
+        <h1>Integrated Engineering & Geotechnical Workflows</h1>
+        <p>Master end-to-end practical workflows from AutoCAD drafting and Revit 3D modeling to Primavera scheduling, Robot structural analysis, and PLAXIS 3D bearing capacity and settlement analysis.</p>
     </header>
 
     <div class="container">
 
-        <section class="instructor-bar">
-            <div class="instructor-info-top">
+        <div class="instructor-card">
+            <div class="instructor-header">
                 <div>
-                    <h2 style="font-size: 1.75rem;">Eng. Ahmed N. Youssef</h2>
-                    <span style="color: var(--accent-blue); font-size: 0.85rem; font-weight: 600;">Private Engineering Instructor</span>
+                    <span style="font-size: 0.8rem; color: var(--primary-blue); font-weight: bold; text-transform: uppercase;">Private Instructor</span>
+                    <h2 class="instructor-name">Eng. Ahmed N. Youssef</h2>
                 </div>
-                <div class="contact-pills">
-                    <span class="pill">📍 Alexandria, Egypt</span>
-                    <a href="mailto:mypc1239@outlook.com" class="pill">✉️ mypc1239@outlook.com</a>
-                    <a href="https://wa.me/201021076604" target="_blank" class="pill whatsapp">💬 WhatsApp</a>
-                    <a href="https://www.facebook.com/share/14rCJ52QUJb/?mibextid=LQQJ4d" target="_blank" class="pill facebook">🌐 Facebook</a>
+                <div class="instructor-contact">
+                    <span>📍 Alexandria, Egypt</span> | 
+                    <span>✉️ <a href="mailto:mypc1239@outlook.com">mypc1239@outlook.com</a></span> | 
+                    <span>💬 <a href="https://wa.me/201021076604" target="_blank" class="whatsapp-link">WhatsApp: +20 102 107 6604</a></span> | 
+                    <span>🌐 <a href="https://www.facebook.com/share/14rCJ52QUJb/?mibextid=LQQJ4d" target="_blank" class="facebook-link">Facebook Page</a></span>
                 </div>
             </div>
 
-            <div class="credentials-row">
-                <div class="cred-box">
-                    <div class="tag">Academic Foundation</div>
-                    <div class="title">B.Sc. Construction & Building Eng.</div>
-                    <div class="sub">AASTMT</div>
+            <div class="credentials-grid">
+                <div class="cred-item">
+                    <span class="cred-tag">Academic Foundation</span>
+                    <div class="cred-title">B.Sc. Construction & Building Eng.</div>
+                    <div class="cred-sub">AASTMT</div>
                 </div>
-                <div class="cred-box">
-                    <div class="tag">Licensure</div>
-                    <div class="title">Egyptian Syndicate of Engineers</div>
-                    <div class="sub">Civil Dept — Alexandria Branch</div>
+                <div class="cred-item">
+                    <span class="cred-tag">Licensure</span>
+                    <div class="cred-title">Egyptian Syndicate of Engineers</div>
+                    <div class="cred-sub">Civil Dept. — Alexandria Branch</div>
                 </div>
-                <div class="cred-box">
-                    <div class="tag">Global Accreditation</div>
-                    <div class="title">ABET Commission & EU Level</div>
-                    <div class="sub">Evaluated equivalent to Danish B.Eng.</div>
+                <div class="cred-item">
+                    <span class="cred-tag">Global Accreditation</span>
+                    <div class="cred-title">ABET Commission & EU Level</div>
+                    <div class="cred-sub">Evaluated as equivalent to a Danish B.Eng.</div>
                 </div>
-                <div class="cred-box">
-                    <div class="tag">International Affiliation</div>
-                    <div class="title">Graduate Member (GMICE)</div>
-                    <div class="sub">ICE United Kingdom</div>
+                <div class="cred-item">
+                    <span class="cred-tag">International Affiliation</span>
+                    <div class="cred-title">Graduate Member (GMICE)</div>
+                    <div class="cred-sub">Institution of Civil Engineers (ICE) — UK</div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <div class="dashboard-grid">
-            <nav class="sidebar">
-                <button class="nav-btn active" onclick="switchTrack(event, 'integrated')">Full Integrated Track</button>
-                <button class="nav-btn" onclick="switchTrack(event, 'cad-revit')">AutoCAD & Revit 3D</button>
-                <button class="nav-btn" onclick="switchTrack(event, 'primavera')">Primavera P6 & Cash Flow</button>
-                <button class="nav-btn" onclick="switchTrack(event, 'robot')">Robot Structural FEA</button>
-                <button class="nav-btn" onclick="switchTrack(event, 'plaxis')">PLAXIS 3D Geotechnical</button>
+        <div class="dashboard-layout">
+            <nav class="sidebar-nav">
+                <button class="tab-btn active" onclick="openCourse(event, 'workflow')">Complete Integrated Track</button>
+                <button class="tab-btn" onclick="openCourse(event, 'autocad-revit')">AutoCAD & Revit Modeling</button>
+                <button class="tab-btn" onclick="openCourse(event, 'primavera-cost')">Primavera & Cash Flow</button>
+                <button class="tab-btn" onclick="openCourse(event, 'robot-fea')">Robot Structural FEA</button>
+                <button class="tab-btn" onclick="openCourse(event, 'plaxis-3d')">PLAXIS 3D Geotechnical FEA</button>
             </nav>
 
             <main>
-                <div id="integrated" class="panel active">
-                    <div class="panel-header">
-                        <h3>Integrated Engineering Track</h3>
-                        <span class="price-badge">300 EGP / 1-Hour Session</span>
+                <div id="workflow" class="tab-content active">
+                    <div class="course-header">
+                        <h2 class="course-title">Integrated Design, Management & Geotechnical Workflows</h2>
+                        <span class="badge">1-on-1 Private Lessons</span>
                     </div>
-                    <div class="syllabus-grid">
-                        <div class="syllabus-card"><span>Drafting architectural plans in AutoCAD and importing/exporting with Revit</span></div>
-                        <div class="syllabus-card"><span>Building 3D structural models for 6-story residential/commercial structures</span></div>
-                        <div class="syllabus-card"><span>Quantity extraction for foundations, stairs, framing, and columns</span></div>
-                        <div class="syllabus-card"><span>Baseline scheduling and project control using Primavera P6</span></div>
-                        <div class="syllabus-card"><span>Earned Value Management (CVI & SVI) & project cash flow forecasts</span></div>
-                        <div class="syllabus-card"><span>Converting Revit models to analytical models and applying wind/gravity loads</span></div>
-                        <div class="syllabus-card"><span>ULS & SLS load combinations and structural safety checks in Robot</span></div>
-                        <div class="syllabus-card"><span>FEA modeling of pile caps on 6 piles (slab on round column supports)</span></div>
-                        <div class="syllabus-card"><span>3D geotechnical modeling of soil-structure interaction and boreholes in PLAXIS 3D</span></div>
-                        <div class="syllabus-card"><span>Simulating settlements under load increments to derive Load-Settlement curves</span></div>
-                        <div class="syllabus-card"><span>Determining ultimate & allowable bearing capacity via Mohr-Coulomb & Hardening Soil</span></div>
-                        <div class="syllabus-card"><span>Executing safety analysis using the phi/c reduction method in PLAXIS</span></div>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <strong>Lesson Duration</strong>
+                            <span>1 Hour</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Price per Lesson</strong>
+                            <span>300 EGP</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Format</strong>
+                            <span>Private 1-on-1 Tutoring</span>
+                        </div>
                     </div>
-                    <a href="#book-section" class="book-btn">Book 1-Hour Private Lesson (300 EGP)</a>
+                    <div class="syllabus">
+                        <h3>Course Outline & Key Topics</h3>
+                        <ul>
+                            <li>Drafting simple architectural plans in AutoCAD and exporting them to Revit</li>
+                            <li>Building 3D structural models for typical 6-story residential/commercial buildings</li>
+                            <li>Extracting quantity takeoffs for foundations, stairs, structural framing, and columns</li>
+                            <li>Project scheduling and baseline creation using Primavera P6</li>
+                            <li>Calculating Cost Variance Index (CVI) and Schedule Variance Index (SVI)</li>
+                            <li>Developing project cash flows and determining required capital investment</li>
+                            <li>Converting 3D Revit structural models into analytical models (including stairs as inclined slabs)</li>
+                            <li>Applying structural loads and seamless export to Robot Structural Analysis</li>
+                            <li>Simulating regional wind loads according to local wind directions</li>
+                            <li>Generating full automatic load combinations (ULS & SLS) and checking member safety</li>
+                            <li>Analyzing a single pile cap supported on 6 piles (modeled as a slab on round column supports)</li>
+                            <li>Simulating settlement to determine bearing capacity</li>
+                        </ul>
+                    </div>
+                    <a href="#enroll-bundle" class="cta-btn">Book a 1-Hour Private Lesson (300 EGP)</a>
                 </div>
 
-                <div id="cad-revit" class="panel">
-                    <div class="panel-header">
-                        <h3>AutoCAD & Revit 3D Modeling</h3>
-                        <span class="price-badge">300 EGP / 1-Hour Session</span>
+                <div id="autocad-revit" class="tab-content">
+                    <div class="course-header">
+                        <h2 class="course-title">AutoCAD Drafting & Revit 3D Structural Modeling</h2>
+                        <span class="badge">1-on-1 Private Lessons</span>
                     </div>
-                    <div class="syllabus-grid">
-                        <div class="syllabus-card"><span>Drafting precise architectural floor plans in AutoCAD</span></div>
-                        <div class="syllabus-card"><span>Exporting CAD files into Revit as reference underlays</span></div>
-                        <div class="syllabus-card"><span>Complete 3D structural modeling for typical 6-story buildings</span></div>
-                        <div class="syllabus-card"><span>Automated material takeoff and precise quantity extraction</span></div>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <strong>Lesson Duration</strong>
+                            <span>1 Hour</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Price per Lesson</strong>
+                            <span>300 EGP</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Format</strong>
+                            <span>Private 1-on-1 Tutoring</span>
+                        </div>
                     </div>
-                    <a href="#book-section" class="book-btn">Book 1-Hour Private Lesson (300 EGP)</a>
+                    <div class="syllabus">
+                        <h3>Lesson Focus</h3>
+                        <ul>
+                            <li>Drafting simple architectural plans using AutoCAD</li>
+                            <li>Exporting AutoCAD CAD files into Revit as reference underlays</li>
+                            <li>Building complete 3D structural models for typical 6-story buildings</li>
+                            <li>Automated material takeoff and precise quantity extraction (Foundations, Stairs, Framing, Columns)</li>
+                        </ul>
+                    </div>
+                    <a href="#enroll-bundle" class="cta-btn">Book a 1-Hour Private Lesson (300 EGP)</a>
                 </div>
 
-                <div id="primavera" class="panel">
-                    <div class="panel-header">
-                        <h3>Primavera P6 & Cost Management</h3>
-                        <span class="price-badge">300 EGP / 1-Hour Session</span>
+                <div id="primavera-cost" class="tab-content">
+                    <div class="course-header">
+                        <h2 class="course-title">Primavera P6 Scheduling & Financial Management</h2>
+                        <span class="badge">1-on-1 Private Lessons</span>
                     </div>
-                    <div class="syllabus-grid">
-                        <div class="syllabus-card"><span>Creating full project schedules based on BIM quantities in Primavera P6</span></div>
-                        <div class="syllabus-card"><span>Tracking project performance with Cost & Schedule Variance Indexes</span></div>
-                        <div class="syllabus-card"><span>Building project cash flow forecasts and capital requirements</span></div>
-                        <div class="syllabus-card"><span>Applying Earned Value Management (EVM) in construction projects</span></div>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <strong>Lesson Duration</strong>
+                            <span>1 Hour</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Price per Lesson</strong>
+                            <span>300 EGP</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Format</strong>
+                            <span>Private 1-on-1 Tutoring</span>
+                        </div>
                     </div>
-                    <a href="#book-section" class="book-btn">Book 1-Hour Private Lesson (300 EGP)</a>
+                    <div class="syllabus">
+                        <h3>Lesson Focus</h3>
+                        <ul>
+                            <li>Creating full project schedules based on BIM quantities in Primavera P6</li>
+                            <li>Tracking project performance using Cost Variance Index (CVI) and Schedule Variance Index (SVI)</li>
+                            <li>Building project cash flow forecasts and evaluating capital requirements</li>
+                            <li>Earned Value Management (EVM) for engineering and construction projects</li>
+                        </ul>
+                    </div>
+                    <a href="#enroll-bundle" class="cta-btn">Book a 1-Hour Private Lesson (300 EGP)</a>
                 </div>
 
-                <div id="robot" class="panel">
-                    <div class="panel-header">
-                        <h3>Robot Structural FEA Analysis</h3>
-                        <span class="price-badge">300 EGP / 1-Hour Session</span>
+                <div id="robot-fea" class="tab-content">
+                    <div class="course-header">
+                        <h2 class="course-title">Robot Structural Analysis & FEA Modeling</h2>
+                        <span class="badge">1-on-1 Private Lessons</span>
                     </div>
-                    <div class="syllabus-grid">
-                        <div class="syllabus-card"><span>Converting 3D Revit models to analytical models (incl. stairs as inclined slabs)</span></div>
-                        <div class="syllabus-card"><span>Applying gravity and regional wind loads based on specific directions</span></div>
-                        <div class="syllabus-card"><span>Generating automatic ULS & SLS load combinations and member safety checks</span></div>
-                        <div class="syllabus-card"><span>FEA modeling of a single pile cap supported on 6 piles</span></div>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <strong>Lesson Duration</strong>
+                            <span>1 Hour</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Price per Lesson</strong>
+                            <span>300 EGP</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Format</strong>
+                            <span>Private 1-on-1 Tutoring</span>
+                        </div>
                     </div>
-                    <a href="#book-section" class="book-btn">Book 1-Hour Private Lesson (300 EGP)</a>
+                    <div class="syllabus">
+                        <h3>Lesson Focus</h3>
+                        <ul>
+                            <li>Converting 3D Revit models to analytical models and modeling stairs as inclined slabs</li>
+                            <li>Applying gravity loads and exporting to Robot Structural Analysis</li>
+                            <li>Simulating regional wind loads based on specific wind directions</li>
+                            <li>Generating automatic ULS & SLS load combinations and structural safety checks</li>
+                            <li>Specialized FEA modeling: Analyzing a single pile cap on 6 piles (modeled as a slab on round column supports)</li>
+                        </ul>
+                    </div>
+                    <a href="#enroll-bundle" class="cta-btn">Book a 1-Hour Private Lesson (300 EGP)</a>
                 </div>
 
-                <div id="plaxis" class="panel">
-                    <div class="panel-header">
-                        <h3>PLAXIS 3D Settlement & Bearing Capacity</h3>
-                        <span class="price-badge">300 EGP / 1-Hour Session</span>
+                <div id="plaxis-3d" class="tab-content">
+                    <div class="course-header">
+                        <h2 class="course-title">PLAXIS 3D Settlement & Bearing Capacity FEA</h2>
+                        <span class="badge">1-on-1 Private Lessons</span>
                     </div>
-                    <div class="syllabus-grid">
-                        <div class="syllabus-card"><span>Defining soil stratigraphy, boreholes, and groundwater levels in 3D</span></div>
-                        <div class="syllabus-card"><span>Calibrating constitutive soil models (Mohr-Coulomb, Hardening Soil)</span></div>
-                        <div class="syllabus-card"><span>Simulating immediate & consolidation settlement under incremental loads</span></div>
-                        <div class="syllabus-card"><span>Plotting Load-Settlement curves for ultimate & allowable bearing capacity</span></div>
-                        <div class="syllabus-card"><span>Running Safety calculation phases (phi/c reduction) for global Factor of Safety</span></div>
-                        <div class="syllabus-card"><span>3D modeling of soil-structure interaction for shallow footings & pile groups</span></div>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <strong>Lesson Duration</strong>
+                            <span>1 Hour</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Price per Lesson</strong>
+                            <span>300 EGP</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Format</strong>
+                            <span>Private 1-on-1 Tutoring</span>
+                        </div>
                     </div>
-                    <a href="#book-section" class="book-btn">Book 1-Hour Private Lesson (300 EGP)</a>
+                    <div class="syllabus">
+                        <h3>Lesson Focus</h3>
+                        <ul>
+                            <li>Simulating settlement to determine bearing capacity</li>
+                        </ul>
+                    </div>
+                    <a href="#enroll-bundle" class="cta-btn">Book a 1-Hour Private Lesson (300 EGP)</a>
                 </div>
             </main>
         </div>
 
-        <section id="book-section" class="action-banner">
-            <h2>Book Your Private Lesson</h2>
-            <p>Direct 1-on-1 personalized tutoring with Eng. Ahmed N. Youssef.</p>
-            <div class="action-buttons">
-                <a href="https://wa.me/201021076604?text=Hello%20Eng.%20Ahmed,%20I%20want%20to%20book%20a%20private%201-hour%20engineering%20lesson%20(300%20EGP)" target="_blank" class="btn-act wa">WhatsApp Contact</a>
-                <a href="https://www.facebook.com/share/14rCJ52QUJb/?mibextid=LQQJ4d" target="_blank" class="btn-act fb">Facebook Page</a>
-                <a href="mailto:mypc1239@outlook.com?subject=Private%20Lesson%20Inquiry%20-%20300%20EGP" class="btn-act email">Send Email</a>
+        <div id="enroll-bundle" class="bundle-banner">
+            <h2>Book Private Engineering Lessons</h2>
+            <p>1-on-1 personalized sessions covering drafting, 3D modeling, quantity takeoff, scheduling, cash flow, structural FEA, and PLAXIS 3D bearing capacity/settlement analysis directly with Eng. Ahmed N. Youssef.</p>
+            <div class="bundle-price">
+                300 EGP / 1-Hour Lesson
             </div>
-        </section>
-
+            <div class="btn-group">
+                <a href="https://wa.me/201021076604?text=Hello%20Eng.%20Ahmed,%20I%20want%20to%20book%20a%20private%201-hour%20engineering%20lesson%20(300%20EGP)" target="_blank" class="bundle-btn">WhatsApp Us</a>
+                <a href="https://www.facebook.com/share/14rCJ52QUJb/?mibextid=LQQJ4d" target="_blank" class="fb-btn">Visit Facebook Page</a>
+                <a href="mailto:mypc1239@outlook.com?subject=Private%20Lesson%20Inquiry%20-%20300%20EGP" class="email-btn">Email Inquiry</a>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -502,15 +652,19 @@
     </footer>
 
     <script>
-        function switchTrack(evt, trackId) {
-            const panels = document.querySelectorAll('.panel');
-            panels.forEach(panel => panel.classList.remove('active'));
+        function openCourse(evt, courseName) {
+            const tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
 
-            const navBtns = document.querySelectorAll('.nav-btn');
-            navBtns.forEach(btn => btn.classList.remove('active'));
+            const tabBtns = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].classList.remove("active");
+            }
 
-            document.getElementById(trackId).classList.add('active');
-            evt.currentTarget.classList.add('active');
+            document.getElementById(courseName).classList.add("active");
+            evt.currentTarget.classList.add("active");
         }
     </script>
 </body>
