@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Nabil Mahmoud Hassan Youssef - Structural & Construction Engineer Portfolio</title>
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #2563eb;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --text-light: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            background-color: #cbd5e1;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        header p {
+            color: #94a3b8;
+            font-size: 1.05rem;
+        }
+
+        .email-link {
+            display: inline-block;
+            margin-top: 0.8rem;
+            color: #60a5fa;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .email-link:hover {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 0.2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 1px solid #e2e8f0;
+            background-color: #cbd5e1;
+        }
+
+        .card-content {
+            padding: 1.2rem;
+        }
+
+        .card-tag {
+            background: #dbeafe;
+            color: var(--accent);
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .card h3 {
+            margin: 0.6rem 0 0.4rem 0;
+            color: var(--primary);
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .watermark-notice {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #e2e8f0;
+            border-radius: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--primary);
+            color: white;
+            font-size: 0.85rem;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="profile-container">
+            <!-- Save your picture as profile.jpg in the main folder -->
+            <img src="profile.jpg" alt="Ahmed Nabil Mahmoud Hassan Youssef" class="profile-pic">
+            <div>
+                <h1>Ahmed Nabil Mahmoud Hassan Youssef</h1>
+                <p>Civil & Structural Engineering Portfolio | BIM, Structural Analysis & Project Control</p>
+                <a href="mailto:mypc1239@outlook.com" class="email-link">✉ mypc1239@outlook.com</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- SECTION 1: PLANNING, COST & PROJECT CONTROL -->
+        <h2 class="section-title">Project Control, Planning & Cost Management</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <img src="1.jpeg" alt="Image 1">
+                <div class="card-content">
+                    <span class="card-tag">Project Control</span>
+                    <h3>Earned Value Analysis (EVA) S-Curve</h3>
+                    <p>Planned Value, Earned Value, Actual Cost, and performance tracking metrics.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="2.jpeg" alt="Image 2">
+                <div class="card-content">
+                    <span class="card-tag">Cost Engineering</span>
+                    <h3>Earned Value (EV) & Actual Cost Matrix</h3>
+                    <p>Cumulative weekly performance metrics across major construction activities.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="4.jpeg" alt="Image 4">
+                <div class="card-content">
+                    <span class="card-tag">Cost Control</span>
+                    <h3>Monthly Cash Flow Forecast</h3>
+                    <p>Financial baseline tracking direct/indirect costs and net cash positions.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="19.jpeg" alt="Image 19">
+                <div class="card-content">
+                    <span class="card-tag">Primavera P6</span>
+                    <h3>Work Breakdown Structure (WBS)</h3>
+                    <p>Baseline schedule breakdown of architectural and MEP activities.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="20.jpeg" alt="Image 20">
+                <div class="card-content">
+                    <span class="card-tag">Primavera P6</span>
+                    <h3>Critical Path Method (CPM) Schedule</h3>
+                    <p>Logic-driven schedule network, Gantt chart, and task dependencies.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECTION 2: STRUCTURAL ANALYSIS -->
+        <h2 class="section-title">Structural Analysis & Design (Autodesk Robot)</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="3.jpeg" alt="Image 3">
+                <div class="card-content">
+                    <span class="card-tag">Robot Analysis</span>
+                    <h3>Flat Slab Punching Shear Analysis</h3>
+                    <p>Verification of ultimate punching shear forces and reinforcement checks.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECTION 3: STRUCTURAL & BIM MODELING -->
+        <h2 class="section-title">Structural Modeling & Rebar Detailing (Autodesk Revit)</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="5.jpeg" alt="Image 5">
+                <div class="card-content">
+                    <span class="card-tag">Structural Frame</span>
+                    <h3>Low-Rise Structural Frame Model</h3>
+                    <p>Clean structural frame visualization and floor plate layout.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="6.jpeg" alt="Image 6">
+                <div class="card-content">
+                    <span class="card-tag">Building BIM</span>
+                    <h3>Multi-Story Commercial Building Frame</h3>
+                    <p>3D structural model highlighting primary vertical load paths.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="7.jpeg" alt="Image 7">
+                <div class="card-content">
+                    <span class="card-tag">3D Frame</span>
+                    <h3>4-Story Concrete Structural Skeleton</h3>
+                    <p>Perspective view of cast-in-place columns, beams, and slab systems.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="8.jpeg" alt="Image 8">
+                <div class="card-content">
+                    <span class="card-tag">3D Frame</span>
+                    <h3>4-Story Concrete Frame (Slab Perspective)</h3>
+                    <p>Underside framing angle showcasing floor slab profiles.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="9.jpeg" alt="Image 9">
+                <div class="card-content">
+                    <span class="card-tag">Revit Structure</span>
+                    <h3>Full Pad Footing & Rebar Grid</h3>
+                    <p>Substructure layout showing pad footing reinforcement matrix.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="10.jpeg" alt="Image 10">
+                <div class="card-content">
+                    <span class="card-tag">Revit Structure</span>
+                    <h3>Foundation Tie Beam & Rebar Junctions</h3>
+                    <p>3D detailing of intersecting reinforced concrete beams and column ties.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="11.jpeg" alt="Image 11">
+                <div class="card-content">
+                    <span class="card-tag">Revit Structure</span>
+                    <h3>Tie Beam & Column Starter Bar Node</h3>
+                    <p>Close-up 3D rebar detailing at critical structural connections.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="12.jpeg" alt="Image 12">
+                <div class="card-content">
+                    <span class="card-tag">Foundation Engineering</span>
+                    <h3>Deep Foundation Framing Layout - View 1</h3>
+                    <p>Isometric view of pile caps and subterranean ground tie beams.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="13.jpeg" alt="Image 13">
+                <div class="card-content">
+                    <span class="card-tag">Foundation Engineering</span>
+                    <h3>Deep Foundation Framing Layout - View 2</h3>
+                    <p>Perspective rendering highlighting stub column spatial alignment.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="14.jpeg" alt="Image 14">
+                <div class="card-content">
+                    <span class="card-tag">Foundation Engineering</span>
+                    <h3>Deep Foundation Framing Layout - View 3</h3>
+                    <p>Substructure model highlighting pile cap grid matrix.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="15.jpeg" alt="Image 15">
+                <div class="card-content">
+                    <span class="card-tag">Foundation Engineering</span>
+                    <h3>Deep Foundation Framing Layout - View 4</h3>
+                    <p>Alternative angle showing underground beam tie integration.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="16.jpeg" alt="Image 16">
+                <div class="card-content">
+                    <span class="card-tag">Vertical Circulation</span>
+                    <h3>Concrete Shear Core & Staircase Model</h3>
+                    <p>Revit 3D model of monolithic stairwell and core walls.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="17.jpeg" alt="Image 17">
+                <div class="card-content">
+                    <span class="card-tag">Revit Structure</span>
+                    <h3>Isolated Footing & Column Rebar Cage</h3>
+                    <p>3D detailing of footing mats and vertical column ties.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="18.jpeg" alt="Image 18">
+                <div class="card-content">
+                    <span class="card-tag">Revit Structure</span>
+                    <h3>Column Tie Bar Detailing</h3>
+                    <p>Detailed view of column starter bars and foundation anchorage.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="watermark-notice">
+            🔒 <strong>Confidentiality Notice:</strong> All project samples displayed above represent non-proprietary technical studies and educational modeling sets prepared solely for competency demonstration.
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Ahmed Nabil Mahmoud Hassan Youssef | <a href="mailto:mypc1239@outlook.com">mypc1239@outlook.com</a>. All rights reserved.
+    </footer>
+
+</body>
+</html>
