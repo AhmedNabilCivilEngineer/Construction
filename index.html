@@ -106,11 +106,12 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .card:hover {
             transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
 
         .card img {
@@ -119,6 +120,12 @@
             object-fit: cover;
             border-bottom: 1px solid #e2e8f0;
             background-color: #cbd5e1;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .card img:hover {
+            opacity: 0.9;
         }
 
         .card-content {
@@ -155,6 +162,48 @@
             border-radius: 6px;
         }
 
+        /* Lightbox Modal */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.9);
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: 6px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .lightbox-close:hover {
+            color: #60a5fa;
+        }
+
         footer {
             text-align: center;
             padding: 1.5rem;
@@ -178,7 +227,6 @@
 
     <header>
         <div class="profile-container">
-            <!-- Save your picture as profile.jpg in the main folder -->
             <img src="profile.jpg" alt="Ahmed Nabil Mahmoud Hassan Youssef" class="profile-pic">
             <div>
                 <h1>Ahmed Nabil Mahmoud Hassan Youssef</h1>
@@ -195,7 +243,7 @@
         <div class="grid">
             
             <div class="card">
-                <img src="1.jpeg" alt="Image 1">
+                <img src="1.jpeg" alt="Earned Value Analysis (EVA) S-Curve">
                 <div class="card-content">
                     <span class="card-tag">Project Control</span>
                     <h3>Earned Value Analysis (EVA) S-Curve</h3>
@@ -204,7 +252,7 @@
             </div>
 
             <div class="card">
-                <img src="2.jpeg" alt="Image 2">
+                <img src="2.jpeg" alt="Earned Value (EV) & Actual Cost Matrix">
                 <div class="card-content">
                     <span class="card-tag">Cost Engineering</span>
                     <h3>Earned Value (EV) & Actual Cost Matrix</h3>
@@ -213,7 +261,7 @@
             </div>
 
             <div class="card">
-                <img src="4.jpeg" alt="Image 4">
+                <img src="4.jpeg" alt="Monthly Cash Flow Forecast">
                 <div class="card-content">
                     <span class="card-tag">Cost Control</span>
                     <h3>Monthly Cash Flow Forecast</h3>
@@ -222,7 +270,7 @@
             </div>
 
             <div class="card">
-                <img src="19.jpeg" alt="Image 19">
+                <img src="19.jpeg" alt="Work Breakdown Structure (WBS)">
                 <div class="card-content">
                     <span class="card-tag">Primavera P6</span>
                     <h3>Work Breakdown Structure (WBS)</h3>
@@ -231,7 +279,7 @@
             </div>
 
             <div class="card">
-                <img src="20.jpeg" alt="Image 20">
+                <img src="20.jpeg" alt="Critical Path Method (CPM) Schedule">
                 <div class="card-content">
                     <span class="card-tag">Primavera P6</span>
                     <h3>Critical Path Method (CPM) Schedule</h3>
@@ -246,11 +294,20 @@
         <div class="grid">
 
             <div class="card">
-                <img src="3.jpeg" alt="Image 3">
+                <img src="3.jpeg" alt="Flat Slab Punching Shear Analysis">
                 <div class="card-content">
                     <span class="card-tag">Robot Analysis</span>
                     <h3>Flat Slab Punching Shear Analysis</h3>
                     <p>Verification of ultimate punching shear forces and reinforcement checks.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="21.jpeg" alt="Robot Structural Analysis Frame Model">
+                <div class="card-content">
+                    <span class="card-tag">ROBOT ANALYSIS</span>
+                    <h3>Multi-Story Frame Structural Analysis</h3>
+                    <p>3D Finite Element Method (FEM) modeling and structural frame analysis.</p>
                 </div>
             </div>
 
@@ -261,7 +318,7 @@
         <div class="grid">
 
             <div class="card">
-                <img src="5.jpeg" alt="Image 5">
+                <img src="5.jpeg" alt="Low-Rise Structural Frame Model">
                 <div class="card-content">
                     <span class="card-tag">Structural Frame</span>
                     <h3>Low-Rise Structural Frame Model</h3>
@@ -270,7 +327,7 @@
             </div>
 
             <div class="card">
-                <img src="6.jpeg" alt="Image 6">
+                <img src="6.jpeg" alt="Multi-Story Commercial Building Frame">
                 <div class="card-content">
                     <span class="card-tag">Building BIM</span>
                     <h3>Multi-Story Commercial Building Frame</h3>
@@ -279,7 +336,16 @@
             </div>
 
             <div class="card">
-                <img src="7.jpeg" alt="Image 7">
+                <img src="22.jpeg" alt="Autodesk Revit 3D Structural View">
+                <div class="card-content">
+                    <span class="card-tag">BUILDING BIM</span>
+                    <h3>3D Building Framing Perspective</h3>
+                    <p>Full 3D structural model showcasing core walls, floor slabs, and column grids.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="7.jpeg" alt="4-Story Concrete Structural Skeleton">
                 <div class="card-content">
                     <span class="card-tag">3D Frame</span>
                     <h3>4-Story Concrete Structural Skeleton</h3>
@@ -288,7 +354,7 @@
             </div>
 
             <div class="card">
-                <img src="8.jpeg" alt="Image 8">
+                <img src="8.jpeg" alt="4-Story Concrete Frame (Slab Perspective)">
                 <div class="card-content">
                     <span class="card-tag">3D Frame</span>
                     <h3>4-Story Concrete Frame (Slab Perspective)</h3>
@@ -297,7 +363,7 @@
             </div>
 
             <div class="card">
-                <img src="9.jpeg" alt="Image 9">
+                <img src="9.jpeg" alt="Full Pad Footing & Rebar Grid">
                 <div class="card-content">
                     <span class="card-tag">Revit Structure</span>
                     <h3>Full Pad Footing & Rebar Grid</h3>
@@ -306,7 +372,7 @@
             </div>
 
             <div class="card">
-                <img src="10.jpeg" alt="Image 10">
+                <img src="10.jpeg" alt="Foundation Tie Beam & Rebar Junctions">
                 <div class="card-content">
                     <span class="card-tag">Revit Structure</span>
                     <h3>Foundation Tie Beam & Rebar Junctions</h3>
@@ -315,7 +381,7 @@
             </div>
 
             <div class="card">
-                <img src="11.jpeg" alt="Image 11">
+                <img src="11.jpeg" alt="Tie Beam & Column Starter Bar Node">
                 <div class="card-content">
                     <span class="card-tag">Revit Structure</span>
                     <h3>Tie Beam & Column Starter Bar Node</h3>
@@ -324,7 +390,7 @@
             </div>
 
             <div class="card">
-                <img src="12.jpeg" alt="Image 12">
+                <img src="12.jpeg" alt="Deep Foundation Framing Layout - View 1">
                 <div class="card-content">
                     <span class="card-tag">Foundation Engineering</span>
                     <h3>Deep Foundation Framing Layout - View 1</h3>
@@ -333,7 +399,7 @@
             </div>
 
             <div class="card">
-                <img src="13.jpeg" alt="Image 13">
+                <img src="13.jpeg" alt="Deep Foundation Framing Layout - View 2">
                 <div class="card-content">
                     <span class="card-tag">Foundation Engineering</span>
                     <h3>Deep Foundation Framing Layout - View 2</h3>
@@ -342,7 +408,7 @@
             </div>
 
             <div class="card">
-                <img src="14.jpeg" alt="Image 14">
+                <img src="14.jpeg" alt="Deep Foundation Framing Layout - View 3">
                 <div class="card-content">
                     <span class="card-tag">Foundation Engineering</span>
                     <h3>Deep Foundation Framing Layout - View 3</h3>
@@ -351,7 +417,7 @@
             </div>
 
             <div class="card">
-                <img src="15.jpeg" alt="Image 15">
+                <img src="15.jpeg" alt="Deep Foundation Framing Layout - View 4">
                 <div class="card-content">
                     <span class="card-tag">Foundation Engineering</span>
                     <h3>Deep Foundation Framing Layout - View 4</h3>
@@ -360,7 +426,7 @@
             </div>
 
             <div class="card">
-                <img src="16.jpeg" alt="Image 16">
+                <img src="16.jpeg" alt="Concrete Shear Core & Staircase Model">
                 <div class="card-content">
                     <span class="card-tag">Vertical Circulation</span>
                     <h3>Concrete Shear Core & Staircase Model</h3>
@@ -369,7 +435,7 @@
             </div>
 
             <div class="card">
-                <img src="17.jpeg" alt="Image 17">
+                <img src="17.jpeg" alt="Isolated Footing & Column Rebar Cage">
                 <div class="card-content">
                     <span class="card-tag">Revit Structure</span>
                     <h3>Isolated Footing & Column Rebar Cage</h3>
@@ -378,7 +444,7 @@
             </div>
 
             <div class="card">
-                <img src="18.jpeg" alt="Image 18">
+                <img src="18.jpeg" alt="Column Tie Bar Detailing">
                 <div class="card-content">
                     <span class="card-tag">Revit Structure</span>
                     <h3>Column Tie Bar Detailing</h3>
@@ -394,9 +460,40 @@
 
     </div>
 
+    <!-- Image Modal/Lightbox -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" alt="Expanded project view">
+    </div>
+
     <footer>
         &copy; 2026 Ahmed Nabil Mahmoud Hassan Youssef | <a href="mailto:mypc1239@outlook.com">mypc1239@outlook.com</a>. All rights reserved.
     </footer>
+
+    <script>
+        const modal = document.getElementById('lightboxModal');
+        const modalImg = document.getElementById('lightboxImg');
+        const closeBtn = document.getElementById('lightboxClose');
+        const cardImages = document.querySelectorAll('.card img');
+
+        cardImages.forEach(img => {
+            img.addEventListener('click', () => {
+                modal.classList.add('active');
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+            });
+        });
+
+        const closeModal = () => modal.classList.remove('active');
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
 
 </body>
 </html>
