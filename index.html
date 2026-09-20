@@ -4,7 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="PfJKyJ6HOko9pkMdExjWrLIeudoK-QtUWcvTG6QOWw4" />
-    <title>Ahmed Nabil Mahmoud Hassan Youssef - Structural & Project Controls Engineer | Technical Deliverables</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Ahmed Nabil Mahmoud Hassan Youssef | Civil & Project Controls Engineer</title>
+    <meta name="title" content="Ahmed Nabil Mahmoud Hassan Youssef | Civil & Project Controls Engineer">
+    <meta name="description" content="Portfolio of Ahmed Nabil Mahmoud Hassan Youssef, Civil & Structural Engineer specializing in Primavera P6, Earned Value Analysis (EVA), AutoCAD, Autodesk Revit BIM, and Autodesk Robot Structural Analysis.">
+    <meta name="keywords" content="Ahmed Nabil Mahmoud Hassan Youssef, Civil Engineer, Structural Engineer, Project Controls Engineer, Primavera P6, AutoCAD, BIM, Revit, Autodesk Robot, Earned Value Analysis, EVA S-Curve">
+    <meta name="author" content="Ahmed Nabil Mahmoud Hassan Youssef">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ahmed Nabil Mahmoud Hassan Youssef - Civil & Project Controls Portfolio">
+    <meta property="og:description" content="Structural modeling, CAD drafting, BIM rebar detailing, and Primavera P6 project control deliverables by Ahmed Nabil Mahmoud Hassan Youssef.">
+
+    <!-- Structured Data (JSON-LD) for Search Engines & AI Recognition -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ahmed Nabil Mahmoud Hassan Youssef",
+      "alternateName": "Ahmed Nabil",
+      "jobTitle": "Civil & Project Controls Engineer",
+      "email": "mailto:mypc1239@outlook.com",
+      "knowsAbout": [
+        "Civil Engineering",
+        "Structural Engineering",
+        "Project Controls",
+        "Primavera P6",
+        "AutoCAD Drafting",
+        "Earned Value Analysis",
+        "Cash Flow Forecasting",
+        "Autodesk Revit",
+        "Autodesk Robot Structural Analysis"
+      ],
+      "url": "https://ahmednabilcivilengineer.github.io/Construction/"
+    }
+    </script>
+
     <style>
         :root {
             --primary: #1e293b;
@@ -172,9 +208,10 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(15, 23, 42, 0.9);
+            background-color: rgba(15, 23, 42, 0.92);
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             padding: 1rem;
         }
 
@@ -184,10 +221,17 @@
 
         .lightbox-content {
             max-width: 90%;
-            max-height: 85vh;
+            max-height: 80vh;
             border-radius: 6px;
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
             object-fit: contain;
+        }
+
+        .lightbox-caption {
+            color: #f8fafc;
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 1rem;
         }
 
         .lightbox-close {
@@ -306,7 +350,7 @@
             <div class="card">
                 <img src="21.jpeg" alt="Robot Structural Analysis Frame Model">
                 <div class="card-content">
-                    <span class="card-tag">ROBOT ANALYSIS</span>
+                    <span class="card-tag">Robot Analysis</span>
                     <h3>Multi-Story Frame Structural Analysis</h3>
                     <p>3D Finite Element Method (FEM) modeling and structural frame analysis.</p>
                 </div>
@@ -354,7 +398,7 @@
             <div class="card">
                 <img src="22.jpeg" alt="Autodesk Revit 3D Structural View">
                 <div class="card-content">
-                    <span class="card-tag">BUILDING BIM</span>
+                    <span class="card-tag">Building BIM</span>
                     <h3>3D Building Framing Perspective</h3>
                     <p>Full 3D structural model showcasing core walls, floor slabs, and column grids.</p>
                 </div>
@@ -480,6 +524,7 @@
     <div class="lightbox-modal" id="lightboxModal">
         <span class="lightbox-close" id="lightboxClose">&times;</span>
         <img class="lightbox-content" id="lightboxImg" alt="Expanded project view">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
     </div>
 
     <footer>
@@ -489,6 +534,7 @@
     <script>
         const modal = document.getElementById('lightboxModal');
         const modalImg = document.getElementById('lightboxImg');
+        const modalCaption = document.getElementById('lightboxCaption');
         const closeBtn = document.getElementById('lightboxClose');
         const cardImages = document.querySelectorAll('.card img');
 
@@ -497,6 +543,9 @@
                 modal.classList.add('active');
                 modalImg.src = img.src;
                 modalImg.alt = img.alt;
+                
+                const cardTitle = img.nextElementSibling ? img.nextElementSibling.querySelector('h3').innerText : img.alt;
+                modalCaption.innerText = cardTitle;
             });
         });
 
