@@ -3,562 +3,430 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="PfJKyJ6HOko9pkMdExjWrLIeudoK-QtUWcvTG6QOWw4" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Ahmed Nabil Mahmoud Hassan Youssef | Civil & Project Controls Engineer</title>
-    <meta name="title" content="Ahmed Nabil Mahmoud Hassan Youssef | Civil & Project Controls Engineer">
-    <meta name="description" content="Portfolio of Ahmed Nabil Mahmoud Hassan Youssef, Civil & Structural Engineer specializing in Primavera P6, Earned Value Analysis (EVA), AutoCAD, Autodesk Revit BIM, and Autodesk Robot Structural Analysis.">
-    <meta name="keywords" content="Ahmed Nabil Mahmoud Hassan Youssef, Civil Engineer, Structural Engineer, Project Controls Engineer, Primavera P6, AutoCAD, BIM, Revit, Autodesk Robot, Earned Value Analysis, EVA S-Curve">
-    <meta name="author" content="Ahmed Nabil Mahmoud Hassan Youssef">
-
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Ahmed Nabil Mahmoud Hassan Youssef - Civil & Project Controls Portfolio">
-    <meta property="og:description" content="Structural modeling, CAD drafting, BIM rebar detailing, and Primavera P6 project control deliverables by Ahmed Nabil Mahmoud Hassan Youssef.">
-
-    <!-- Structured Data (JSON-LD) for Search Engines & AI Recognition -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ahmed Nabil Mahmoud Hassan Youssef",
-      "alternateName": "Ahmed Nabil",
-      "jobTitle": "Civil & Project Controls Engineer",
-      "email": "mailto:mypc1239@outlook.com",
-      "knowsAbout": [
-        "Civil Engineering",
-        "Structural Engineering",
-        "Project Controls",
-        "Primavera P6",
-        "AutoCAD Drafting",
-        "Earned Value Analysis",
-        "Cash Flow Forecasting",
-        "Autodesk Revit",
-        "Autodesk Robot Structural Analysis"
-      ],
-      "url": "https://ahmednabilcivilengineer.github.io/Construction/"
-    }
-    </script>
-
+    <title>CV - Ahmed Nabil Mahmoud Hassan Youssef</title>
     <style>
         :root {
             --primary: #1e293b;
             --accent: #2563eb;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
             --text: #334155;
             --text-light: #64748b;
+            --border: #e2e8f0;
+            --bg-light: #f8fafc;
         }
 
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
 
         body {
-            background-color: var(--bg);
+            background-color: #f1f5f9;
             color: var(--text);
-            line-height: 1.6;
+            line-height: 1.5;
+            padding: 2rem 1rem;
         }
 
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2.5rem 3rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 6px;
+        }
+
+        /* Header */
         header {
-            background: var(--primary);
-            color: white;
-            padding: 3rem 1rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
             text-align: center;
         }
 
-        .profile-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .profile-pic {
-            width: 130px;
-            height: 130px;
+        .profile-img-cv {
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid var(--accent);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            border: 3px solid var(--accent);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            margin-bottom: 0.8rem;
             background-color: #cbd5e1;
         }
 
         header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.3rem;
-        }
-
-        header p {
-            color: #94a3b8;
-            font-size: 1.05rem;
-        }
-
-        .email-link {
-            display: inline-block;
-            margin-top: 0.8rem;
-            color: #60a5fa;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-
-        .email-link:hover {
-            color: #93c5fd;
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: var(--primary);
-            margin-bottom: 1.5rem;
-            border-bottom: 3px solid var(--accent);
-            display: inline-block;
-            padding-bottom: 0.2rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-bottom: 1px solid #e2e8f0;
-            background-color: #cbd5e1;
-            cursor: pointer;
-            transition: opacity 0.2s ease;
-        }
-
-        .card img:hover {
-            opacity: 0.9;
-        }
-
-        .card-content {
-            padding: 1.2rem;
-        }
-
-        .card-tag {
-            background: #dbeafe;
-            color: var(--accent);
-            font-size: 0.8rem;
-            font-weight: bold;
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
+            margin-bottom: 0.2rem;
         }
 
-        .card h3 {
-            margin: 0.6rem 0 0.4rem 0;
-            color: var(--primary);
+        header h2 {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.8rem;
         }
 
-        .card p {
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
             font-size: 0.9rem;
             color: var(--text-light);
         }
 
-        .watermark-notice {
-            text-align: center;
-            font-size: 0.85rem;
+        .contact-info a {
             color: var(--text-light);
-            margin-top: 2rem;
-            padding: 1rem;
-            background: #e2e8f0;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        /* Section Headings */
+        .section-title {
+            font-size: 1.15rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.3rem;
+            margin-top: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Content Blocks */
+        p {
+            font-size: 0.95rem;
+            color: var(--text);
+            margin-bottom: 0.8rem;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            font-size: 0.92rem;
+            margin-bottom: 0.4rem;
+            color: var(--text);
+        }
+
+        /* Visual Project Previews */
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.8rem;
+            margin: 0.8rem 0 1.2rem 0;
+        }
+
+        .preview-card {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
             border-radius: 6px;
-        }
-
-        /* Lightbox Modal */
-        .lightbox-modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(15, 23, 42, 0.92);
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 1rem;
-        }
-
-        .lightbox-modal.active {
-            display: flex;
-        }
-
-        .lightbox-content {
-            max-width: 90%;
-            max-height: 80vh;
-            border-radius: 6px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
-            object-fit: contain;
-        }
-
-        .lightbox-caption {
-            color: #f8fafc;
-            margin-top: 1rem;
+            overflow: hidden;
             text-align: center;
+        }
+
+        .preview-card img {
+            width: 100%;
+            height: 85px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border);
+            display: block;
+        }
+
+        .preview-card span {
+            display: block;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--primary);
+            padding: 0.3rem 0.2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Grid Layouts for Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .skill-category {
+            background: var(--bg-light);
+            padding: 0.8rem 1rem;
+            border-left: 3px solid var(--accent);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .skill-category h4 {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+            text-transform: uppercase;
+        }
+
+        .skill-category p {
+            font-size: 0.85rem;
+            margin-bottom: 0;
+            color: var(--text-light);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.3rem;
+        }
+
+        .job-title {
+            font-weight: 700;
+            color: var(--primary);
             font-size: 1rem;
         }
 
-        .lightbox-close {
-            position: absolute;
-            top: 1.5rem;
-            right: 2rem;
-            color: #ffffff;
-            font-size: 2.5rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: color 0.2s ease;
-        }
-
-        .lightbox-close:hover {
-            color: #60a5fa;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background: var(--primary);
-            color: white;
-            font-size: 0.85rem;
-            margin-top: 3rem;
-        }
-
-        footer a {
-            color: #94a3b8;
+        .portfolio-link {
+            display: inline-block;
+            margin-top: 0.4rem;
+            font-size: 0.82rem;
+            color: var(--accent);
             text-decoration: none;
+            font-weight: 600;
         }
 
-        footer a:hover {
-            color: #ffffff;
+        .portfolio-link:hover {
+            text-decoration: underline;
+        }
+
+        .notice {
+            margin-top: 2rem;
+            padding: 0.8rem;
+            background-color: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 0.82rem;
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        /* Print Optimization for Save/Print as PDF */
+        @media print {
+            body {
+                background-color: #ffffff;
+                padding: 0;
+            }
+            .cv-container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            .section-title {
+                margin-top: 1.2rem;
+            }
+            .preview-card img {
+                height: 70px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="profile-container">
-            <img src="profile.jpg" alt="Ahmed Nabil Mahmoud Hassan Youssef" class="profile-pic">
-            <div>
-                <h1>Ahmed Nabil Mahmoud Hassan Youssef</h1>
-                <p>Civil & Structural Engineering | BIM, Structural Analysis & Project Control Documentation</p>
-                <a href="mailto:mypc1239@outlook.com" class="email-link">✉ mypc1239@outlook.com</a>
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
+    <div class="cv-container">
         
-        <!-- SECTION 1: PLANNING, COST & PROJECT CONTROL -->
-        <h2 class="section-title">Project Control, Planning & Cost Management</h2>
-        <div class="grid">
+        <!-- HEADER WITH PROFILE PICTURE -->
+        <header>
+            <img src="profile.jpg" alt="Ahmed Nabil Mahmoud Hassan Youssef" class="profile-img-cv">
+            <h1>Ahmed Nabil Mahmoud Hassan Youssef</h1>
+            <h2>Civil & Project Controls Engineer</h2>
+            <div class="contact-info">
+                <span>📍 Alexandria, Egypt</span>
+                <span>✉️ <a href="mailto:mypc1239@outlook.com">mypc1239@outlook.com</a></span>
+                <span>🌐 <a href="https://ahmednabilcivilengineer.github.io/Construction/" target="_blank">Online Portfolio</a></span>
+            </div>
+        </header>
+
+        <!-- PROFESSIONAL SUMMARY -->
+        <section>
+            <h3 class="section-title">Professional Summary</h3>
+            <p>
+                Detail-oriented <strong>Civil & Project Controls Engineer</strong> specializing in integrated project management, Primavera P6 baseline scheduling, Earned Value Analysis (EVA), and BIM structural modeling. Proven track record in executing structural finite element analysis, 3D rebar detailing, and financial cash flow forecasting. Adept at bridging structural design precision with robust cost engineering and schedule controls to ensure deliverable accuracy and project profitability.
+            </p>
+        </section>
+
+        <!-- CORE COMPETENCIES -->
+        <section>
+            <h3 class="section-title">Core Competencies & Tools</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Project Controls & Planning</h4>
+                    <p>Primavera P6 (WBS & CPM Scheduling), Earned Value Management (EVA S-Curves), Cost Engineering, Monthly Cash Flow Forecasting.</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Structural Analysis & BIM</h4>
+                    <p>Finite Element Method (FEM) Modeling, Flat Slab Punching Shear Analysis, 3D Rebar Detailing, Foundation Framing.</p>
+                </div>
+                <div class="skill-category">
+                    <h4>CAD & Technical Drafting</h4>
+                    <p>AutoCAD Structural Detailing, Grid Axis Layouts, Reinforcement Plans & Schedules.</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Software Suite</h4>
+                    <p>Primavera P6, Autodesk Revit, Autodesk Robot Structural Analysis, AutoCAD, MS Excel (Cost & Financial Matrices).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL DELIVERABLES WITH PICTURE PREVIEWS -->
+        <section>
+            <h3 class="section-title">Technical Capabilities & Project Deliverables</h3>
             
-            <div class="card">
-                <img src="1.jpeg" alt="Earned Value Analysis (EVA) S-Curve">
-                <div class="card-content">
-                    <span class="card-tag">Project Control</span>
-                    <h3>Earned Value Analysis (EVA) S-Curve</h3>
-                    <p>Planned Value, Earned Value, Actual Cost, and performance tracking metrics.</p>
+            <!-- 1. PROJECT CONTROLS -->
+            <div style="margin-bottom: 1.5rem;">
+                <div class="job-header">
+                    <span class="job-title">1. Project Control, Planning & Cost Management</span>
                 </div>
-            </div>
-
-            <div class="card">
-                <img src="2.jpeg" alt="Earned Value (EV) & Actual Cost Matrix">
-                <div class="card-content">
-                    <span class="card-tag">Cost Engineering</span>
-                    <h3>Earned Value (EV) & Actual Cost Matrix</h3>
-                    <p>Cumulative weekly performance metrics across major construction activities.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="4.jpeg" alt="Monthly Cash Flow Forecast">
-                <div class="card-content">
-                    <span class="card-tag">Cost Control</span>
-                    <h3>Monthly Cash Flow Forecast</h3>
-                    <p>Financial baseline tracking direct/indirect costs and net cash positions.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="19.jpeg" alt="Work Breakdown Structure (WBS)">
-                <div class="card-content">
-                    <span class="card-tag">Primavera P6</span>
-                    <h3>Work Breakdown Structure (WBS)</h3>
-                    <p>Baseline schedule breakdown of architectural and MEP activities.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="20.jpeg" alt="Critical Path Method (CPM) Schedule">
-                <div class="card-content">
-                    <span class="card-tag">Primavera P6</span>
-                    <h3>Critical Path Method (CPM) Schedule</h3>
-                    <p>Logic-driven schedule network, Gantt chart, and task dependencies.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- SECTION 2: STRUCTURAL ANALYSIS -->
-        <h2 class="section-title">Structural Analysis & Design (Autodesk Robot)</h2>
-        <div class="grid">
-
-            <div class="card">
-                <img src="3.jpeg" alt="Flat Slab Punching Shear Analysis">
-                <div class="card-content">
-                    <span class="card-tag">Robot Analysis</span>
-                    <h3>Flat Slab Punching Shear Analysis</h3>
-                    <p>Verification of ultimate punching shear forces and reinforcement checks.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="21.jpeg" alt="Robot Structural Analysis Frame Model">
-                <div class="card-content">
-                    <span class="card-tag">Robot Analysis</span>
-                    <h3>Multi-Story Frame Structural Analysis</h3>
-                    <p>3D Finite Element Method (FEM) modeling and structural frame analysis.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- SECTION 3: STRUCTURAL & CAD DRAFTING -->
-        <h2 class="section-title">Structural & AutoCAD Drafting</h2>
-        <div class="grid">
-
-            <div class="card">
-                <img src="23.jpeg" alt="Slab Reinforcement Layout & Grid Plan">
-                <div class="card-content">
-                    <span class="card-tag">AutoCAD</span>
-                    <h3>Slab Reinforcement Layout & Grid Plan</h3>
-                    <p>Detailed structural CAD drawing displaying column grid axes, dimensions, and top/bottom reinforcement distribution.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- SECTION 4: STRUCTURAL & BIM MODELING -->
-        <h2 class="section-title">Structural Modeling & Rebar Detailing (Autodesk Revit)</h2>
-        <div class="grid">
-
-            <div class="card">
-                <img src="5.jpeg" alt="Low-Rise Structural Frame Model">
-                <div class="card-content">
-                    <span class="card-tag">Structural Frame</span>
-                    <h3>Low-Rise Structural Frame Model</h3>
-                    <p>Clean structural frame visualization and floor plate layout.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="6.jpeg" alt="Multi-Story Commercial Building Frame">
-                <div class="card-content">
-                    <span class="card-tag">Building BIM</span>
-                    <h3>Multi-Story Commercial Building Frame</h3>
-                    <p>3D structural model highlighting primary vertical load paths.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="22.jpeg" alt="Autodesk Revit 3D Structural View">
-                <div class="card-content">
-                    <span class="card-tag">Building BIM</span>
-                    <h3>3D Building Framing Perspective</h3>
-                    <p>Full 3D structural model showcasing core walls, floor slabs, and column grids.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="7.jpeg" alt="4-Story Concrete Structural Skeleton">
-                <div class="card-content">
-                    <span class="card-tag">3D Frame</span>
-                    <h3>4-Story Concrete Structural Skeleton</h3>
-                    <p>Perspective view of cast-in-place columns, beams, and slab systems.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="8.jpeg" alt="4-Story Concrete Frame (Slab Perspective)">
-                <div class="card-content">
-                    <span class="card-tag">3D Frame</span>
-                    <h3>4-Story Concrete Frame (Slab Perspective)</h3>
-                    <p>Underside framing angle showcasing floor slab profiles.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="9.jpeg" alt="Full Pad Footing & Rebar Grid">
-                <div class="card-content">
-                    <span class="card-tag">Revit Structure</span>
-                    <h3>Full Pad Footing & Rebar Grid</h3>
-                    <p>Substructure layout showing pad footing reinforcement matrix.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="10.jpeg" alt="Foundation Tie Beam & Rebar Junctions">
-                <div class="card-content">
-                    <span class="card-tag">Revit Structure</span>
-                    <h3>Foundation Tie Beam & Rebar Junctions</h3>
-                    <p>3D detailing of intersecting reinforced concrete beams and column ties.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="11.jpeg" alt="Tie Beam & Column Starter Bar Node">
-                <div class="card-content">
-                    <span class="card-tag">Revit Structure</span>
-                    <h3>Tie Beam & Column Starter Bar Node</h3>
-                    <p>Close-up 3D rebar detailing at critical structural connections.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="12.jpeg" alt="Deep Foundation Framing Layout - View 1">
-                <div class="card-content">
-                    <span class="card-tag">Foundation Engineering</span>
-                    <h3>Deep Foundation Framing Layout - View 1</h3>
-                    <p>Isometric view of pile caps and subterranean ground tie beams.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="13.jpeg" alt="Deep Foundation Framing Layout - View 2">
-                <div class="card-content">
-                    <span class="card-tag">Foundation Engineering</span>
-                    <h3>Deep Foundation Framing Layout - View 2</h3>
-                    <p>Perspective rendering highlighting stub column spatial alignment.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="14.jpeg" alt="Deep Foundation Framing Layout - View 3">
-                <div class="card-content">
-                    <span class="card-tag">Foundation Engineering</span>
-                    <h3>Deep Foundation Framing Layout - View 3</h3>
-                    <p>Substructure model highlighting pile cap grid matrix.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="15.jpeg" alt="Deep Foundation Framing Layout - View 4">
-                <div class="card-content">
-                    <span class="card-tag">Foundation Engineering</span>
-                    <h3>Deep Foundation Framing Layout - View 4</h3>
-                    <p>Alternative angle showing underground beam tie integration.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="16.jpeg" alt="Concrete Shear Core & Staircase Model">
-                <div class="card-content">
-                    <span class="card-tag">Vertical Circulation</span>
-                    <h3>Concrete Shear Core & Staircase Model</h3>
-                    <p>Revit 3D model of monolithic stairwell and core walls.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="17.jpeg" alt="Isolated Footing & Column Rebar Cage">
-                <div class="card-content">
-                    <span class="card-tag">Revit Structure</span>
-                    <h3>Isolated Footing & Column Rebar Cage</h3>
-                    <p>3D detailing of footing mats and vertical column ties.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="18.jpeg" alt="Column Tie Bar Detailing">
-                <div class="card-content">
-                    <span class="card-tag">Revit Structure</span>
-                    <h3>Column Tie Bar Detailing</h3>
-                    <p>Detailed view of column starter bars and foundation anchorage.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="watermark-notice">
-            🔒 <strong>Confidentiality Notice:</strong> Selected engineering deliverables, structural modeling, and project control samples prepared during professional practice. Sensitive project data has been anonymized for confidentiality.
-        </div>
-
-    </div>
-
-    <!-- Image Modal/Lightbox -->
-    <div class="lightbox-modal" id="lightboxModal">
-        <span class="lightbox-close" id="lightboxClose">&times;</span>
-        <img class="lightbox-content" id="lightboxImg" alt="Expanded project view">
-        <div class="lightbox-caption" id="lightboxCaption"></div>
-    </div>
-
-    <footer>
-        &copy; 2026 Ahmed Nabil Mahmoud Hassan Youssef | <a href="mailto:mypc1239@outlook.com">mypc1239@outlook.com</a>. All rights reserved.
-    </footer>
-
-    <script>
-        const modal = document.getElementById('lightboxModal');
-        const modalImg = document.getElementById('lightboxImg');
-        const modalCaption = document.getElementById('lightboxCaption');
-        const closeBtn = document.getElementById('lightboxClose');
-        const cardImages = document.querySelectorAll('.card img');
-
-        cardImages.forEach(img => {
-            img.addEventListener('click', () => {
-                modal.classList.add('active');
-                modalImg.src = img.src;
-                modalImg.alt = img.alt;
                 
-                const cardTitle = img.nextElementSibling ? img.nextElementSibling.querySelector('h3').innerText : img.alt;
-                modalCaption.innerText = cardTitle;
-            });
-        });
+                <!-- Deliverable Pictures -->
+                <div class="preview-grid">
+                    <div class="preview-card">
+                        <img src="1.jpeg" alt="EVA S-Curve">
+                        <span>EVA S-Curve</span>
+                    </div>
+                    <div class="preview-card">
+                        <img src="2.jpeg" alt="Cost Matrix">
+                        <span>Cost Matrix</span>
+                    </div>
+                    <div class="preview-card">
+                        <img src="4.jpeg" alt="Cash Flow Forecast">
+                        <span>Cash Flow</span>
+                    </div>
+                    <div class="preview-card">
+                        <img src="19.jpeg" alt="Primavera P6 WBS">
+                        <span>P6 WBS Schedule</span>
+                    </div>
+                    <div class="preview-card">
+                        <img src="20.jpeg" alt="CPM Schedule">
+                        <span>CPM Network</span>
+                    </div>
+                </div>
 
-        const closeModal = () => modal.classList.remove('active');
+                <ul>
+                    <li><strong>Earned Value Analysis (EVA):</strong> Developed baseline performance tracking tools utilizing Planned Value (PV), Earned Value (EV), and Actual Cost (AC) metrics to generate accurate S-Curves and Variance Indexes (CPI/SPI).</li>
+                    <li><strong>Cost Engineering & Monitoring:</strong> Structured cumulative weekly cost matrices across primary construction activity packages to track direct/indirect expenses against budgetary baselines.</li>
+                    <li><strong>Cash Flow Forecasting:</strong> Formulated monthly cash flow projections and working capital models to optimize net cash positions during project execution.</li>
+                    <li><strong>Primavera P6 Scheduling:</strong> Built logic-driven Critical Path Method (CPM) networks, Gantt charts, and Work Breakdown Structures (WBS) covering civil, architectural, and MEP trades.</li>
+                </ul>
+            </div>
 
-        closeBtn.addEventListener('click', closeModal);
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
-        });
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeModal();
-        });
-    </script>
+            <!-- 2. STRUCTURAL ANALYSIS -->
+            <div style="margin-bottom: 1.5rem;">
+                <div class="job-header">
+                    <span class="job-title">2. Structural Analysis & Design (Autodesk Robot)</span>
+                </div>
+
+                <!-- Deliverable Pictures -->
+                <div class="preview-grid">
+                    <div class="preview-card">
+                        <img src="3.jpeg" alt="Punching Shear Analysis">
+                        <span>Punching Shear</span>
+                    </div>
+                    <div class="preview-card">
+                        <img src="21.jpeg" alt="3D Frame Analysis">
+                        <span>3D Robot FEM</span>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><strong>Finite Element Analysis (FEM):</strong> Executed multi-story 3D frame modeling and structural analysis using Autodesk Robot Structural Analysis to verify vertical and lateral load pathways.</li>
+                    <li><strong>Slab & Element Checks:</strong> Performed ultimate punching shear analysis and reinforcement checks for flat slab systems under severe loading conditions.</li>
+                </ul>
+            </div>
+
+            <!-- 3. AUTOCAD DRAFTING -->
+            <div style="margin-bottom: 1.5rem;">
+                <div class="job-header">
+                    <span class="job-title">3. Structural & CAD Drafting (AutoCAD)</span>
+                </div>
+
+                <!-- Deliverable Pictures -->
+                <div class="preview-grid" style="grid-template-columns: minmax(130px, 180px);">
+                    <div class="preview-card">
+                        <img src="23.jpeg" alt="CAD Slab Reinforcement Layout">
+                        <span>CAD Reinforcement Plan</span>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><strong>Drafting Deliverables:</strong> Produced high-precision AutoCAD structural plan sets, column grid axes, dimensional layouts, and top/bottom slab reinforcement distribution drawings.</li>
+                </ul>
+            </div>
+
+            <!-- 4. BIM & REBAR DETAILING -->
+            <div style="margin-bottom: 1.5rem;">
+                <div class="job-header">
+                    <span class="job-title">4. BIM Modeling & Rebar Detailing (Autodesk Revit)</span>
+                </div>
+
+                <!-- Deliverable Pictures -->
+                <div class="preview-grid">
+                    <div class="preview-card">
+                        <img src="6.jpeg" alt="3D Building BIM">
+                        <span>3D BIM Frame</span>
+                    </div>
+                    <div class="preview-card">
+                        <img src="9.jpeg" alt="Footing & Rebar Grid">
+                        <span>Pad Footing Rebar</span>
+                    </div>
+                    <div class="preview-card">
+                        <img src="11.jpeg" alt="Starter Bar Node">
+                        <span>Tie Beam Node</span>
+                    </div>
+                    <div class="preview-card">
+                        <img src="12.jpeg" alt="Deep Foundation Layout">
+                        <span>Pile Cap Matrix</span>
+                    </div>
+                    <div class="preview-card">
+                        <img src="16.jpeg" alt="Shear Core Model">
+                        <span>Concrete Shear Core</span>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><strong>Substructure & Foundation Engineering:</strong> Modeled deep and shallow foundation systems, including isolated footings, pile caps, and subterranean ground tie beam matrices.</li>
+                    <li><strong>Reinforcement Detailing:</strong> Generated complex 3D rebar cages, column starter bar anchorage nodes, footing grids, and tie-beam junction details.</li>
+                    <li><strong>Vertical Circulation & Core Systems:</strong> Developed integrated 3D models for monolithic concrete shear cores and stairwell structural components.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h3 class="section-title">Education</h3>
+            <div class="job-header">
+                <span class="job-title">Bachelor of Science in Civil Engineering</span>
+            </div>
+            <p style="color: var(--text-light); font-size: 0.9rem;">Specialization: Structural Engineering & Construction Management</p>
+        </section>
+
+        <!-- CONFIDENTIALITY NOTICE -->
+        <div class="notice">
+            🔒 <strong>Confidentiality Notice:</strong> Selected engineering deliverables, structural models, and project control datasets are documented in my <a href="https://ahmednabilcivilengineer.github.io/Construction/" target="_blank" style="color: var(--accent);">Online Portfolio</a>. Sensitive project data has been anonymized in compliance with professional practice standards.
+        </div>
+
+    </div>
 
 </body>
 </html>
