@@ -6,119 +6,149 @@
     <title>Ahmed Nabil Mahmoud Hassan Youssef - CV</title>
     <style>
         @page {
-            size: letter;
-            margin: 0.6in;
+            size: A4 portrait;
+            margin: 10mm 12mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #111111;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 8.5pt;
+            line-height: 1.3;
+            -webkit-print-color-adjust: exact;
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 10pt;
-            line-height: 1.45;
-            color: #111111;
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px 20px;
         }
 
         header {
             text-align: center;
             border-bottom: 1.5pt solid #222222;
-            padding-bottom: 8px;
-            margin-bottom: 14px;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
         }
 
         h1 {
-            font-size: 16pt;
+            font-size: 13.5pt;
             font-weight: bold;
             text-transform: uppercase;
-            margin: 0 0 4px 0;
+            margin: 0 0 2px 0;
             letter-spacing: 0.5px;
             color: #000000;
         }
 
         .subtitle {
-            font-size: 11pt;
+            font-size: 9.5pt;
             font-weight: bold;
             color: #333333;
-            margin-bottom: 6px;
+            margin-bottom: 3px;
         }
 
         .contact-info {
-            font-size: 9pt;
+            font-size: 8pt;
             color: #222222;
         }
 
+        .contact-info a {
+            color: #222222;
+            text-decoration: none;
+        }
+
         .section-heading {
-            font-size: 11pt;
+            font-size: 9.5pt;
             font-weight: bold;
             text-transform: uppercase;
             border-bottom: 1pt solid #333333;
-            margin-top: 14px;
-            margin-bottom: 8px;
-            padding-bottom: 2px;
+            margin-top: 8px;
+            margin-bottom: 4px;
+            padding-bottom: 1px;
             color: #000000;
         }
 
         p {
-            margin: 0 0 6px 0;
-            font-size: 9.5pt;
+            margin: 0 0 4px 0;
+            font-size: 8.5pt;
             text-align: justify;
         }
 
         .entry {
-            margin-bottom: 8px;
+            margin-bottom: 5px;
         }
 
         .entry-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-top: 6px;
+            margin-top: 3px;
         }
 
         .entry-title {
-            font-size: 10pt;
+            font-size: 8.5pt;
             font-weight: bold;
             color: #000000;
         }
 
         .entry-date {
-            font-size: 9.5pt;
+            font-size: 8.5pt;
             font-weight: bold;
             color: #000000;
             white-space: nowrap;
         }
 
         .entry-subtitle {
-            font-size: 9.5pt;
+            font-size: 8.5pt;
             font-style: italic;
             color: #333333;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
 
         ul {
-            margin: 0 0 6px 0;
-            padding-left: 18px;
+            margin: 0 0 4px 0;
+            padding-left: 15px;
         }
 
         li {
-            font-size: 9.5pt;
-            margin-bottom: 3px;
+            font-size: 8.5pt;
+            margin-bottom: 2px;
         }
 
         .skills-list p {
-            margin-bottom: 4px;
+            margin-bottom: 3px;
+            font-size: 8.5pt;
+        }
+
+        .page-break {
+            page-break-before: always;
+            break-before: page;
+        }
+
+        @media print {
+            body {
+                max-width: 100%;
+                padding: 0;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER -->
+    <!-- ================= PAGE 1 ================= -->
     <header>
         <h1>Ahmed Nabil Mahmoud Hassan Youssef, GMICE</h1>
         <div class="subtitle">Civil &amp; Project Controls Engineer</div>
         <div class="contact-info">
-            Alexandria, Egypt | Email: mypc1239@outlook.com | Portfolio: https://ahmednabilcivilengineer.github.io/Construction/
+            Alexandria, Egypt | Email: mypc1239@outlook.com | Portfolio: <a href="https://ahmednabilcivilengineer.github.io/Construction/">https://ahmednabilcivilengineer.github.io/Construction/</a>
         </div>
     </header>
 
@@ -130,7 +160,7 @@
         </p>
     </section>
 
-    <!-- PROFESSIONAL MEMBERSHIPS & QUALIFICATIONS -->
+    <!-- PROFESSIONAL MEMBERSHIPS & CREDENTIALS -->
     <section>
         <div class="section-heading">Professional Memberships &amp; Credentials</div>
 
@@ -139,7 +169,7 @@
                 <div class="entry-title">Registered Civil Engineer</div>
                 <div class="entry-date">2025</div>
             </div>
-            <div class="entry-subtitle">Egyptian Syndicate of Engineers – Civil Engineering Division (Alexandria Branch)</div>
+            <div class="entry-subtitle">Egyptian Syndicate of Engineers - Civil Engineering Division (Alexandria Branch)</div>
             <ul>
                 <li>Licensed professional civil engineering status in Egypt.</li>
             </ul>
@@ -179,7 +209,10 @@
         </div>
     </section>
 
-    <!-- PROJECT EXPERIENCE & TECHNICAL DELIVERABLES -->
+    <!-- ================= PAGE 2 ================= -->
+    <div class="page-break"></div>
+
+    <!-- ENGINEERING PROJECTS & TECHNICAL EXPERIENCE -->
     <section>
         <div class="section-heading">Engineering Projects &amp; Technical Experience</div>
 
@@ -188,7 +221,7 @@
                 <div class="entry-title">Geotechnical Site Investigation &amp; Foundation Design Project</div>
                 <div class="entry-date">Feb 2025</div>
             </div>
-            <div class="entry-subtitle">Senior Graduation Project | Grade: Excellent | AASTMT – Dept. of Construction &amp; Building Engineering</div>
+            <div class="entry-subtitle">Senior Graduation Project | Grade: Excellent | AASTMT - Dept. of Construction &amp; Building Engineering</div>
             <ul>
                 <li>Analyzed soil borehole data and laboratory test results to evaluate ground conditions.</li>
                 <li>Calculated building loads and designed deep pile foundations to ensure structural stability.</li>
@@ -232,7 +265,7 @@
                 <div class="entry-title">Bachelor Degree in Construction and Building Engineering</div>
                 <div class="entry-date">Graduated Jan 2025</div>
             </div>
-            <div class="entry-subtitle">Arab Academy for Science, Technology &amp; Maritime Transport (AASTMT) – Alexandria, Egypt</div>
+            <div class="entry-subtitle">Arab Academy for Science, Technology &amp; Maritime Transport (AASTMT) - Alexandria, Egypt</div>
             <ul>
                 <li><strong>GPA:</strong> 2.9 / 4.0 ("Good").</li>
                 <li><strong>Accreditation:</strong> Accredited by the Engineering Accreditation Commission (EAC) of ABET under Construction Engineering program criteria.</li>
@@ -245,7 +278,7 @@
                 <div class="entry-title">American High School Diploma &amp; SAT Credentials</div>
                 <div class="entry-date">Graduated Jun 2019</div>
             </div>
-            <div class="entry-subtitle">Alexandria Private Language School – American Division</div>
+            <div class="entry-subtitle">Alexandria Private Language School - American Division</div>
             <ul>
                 <li><strong>GPA:</strong> 3.4 / 4.0.</li>
                 <li><strong>College Board SAT I:</strong> Total Score 1280 (Math: 770, Evidence-Based Reading &amp; Writing: 510).</li>
