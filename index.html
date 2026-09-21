@@ -3,285 +3,936 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eng. Ahmed Nabil - CV</title>
+    <meta name="google-site-verification" content="PfJKyJ6HOko9pkMdExjWrLIeudoK-QtUWcvTG6QOWw4" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Ahmed Nabil Mahmoud Hassan Youssef, GMICE | Civil & Project Controls Engineer</title>
+    <meta name="title" content="Ahmed Nabil Mahmoud Hassan Youssef, GMICE | Civil & Project Controls Engineer">
+    <meta name="description" content="Professional portfolio and CV of Eng. Ahmed Nabil Mahmoud Hassan Youssef, GMICE. Civil & Project Controls Engineer specializing in Primavera P6, EVA S-Curves, BIM Revit, Robot Structural Analysis, and AutoCAD drafting.">
+    <meta name="keywords" content="Ahmed Nabil Mahmoud Hassan Youssef, Eng Ahmed Nabil, GMICE, Civil Engineer, Structural Engineer, Project Controls Engineer, Primavera P6, AutoCAD, BIM, Revit, Autodesk Robot, Earned Value Analysis, EVA S-Curve, Alexandria Egypt">
+    <meta name="author" content="Ahmed Nabil Mahmoud Hassan Youssef">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ahmed Nabil Mahmoud Hassan Youssef - Portfolio & CV">
+    <meta property="og:description" content="Integrated CV and portfolio featuring structural modeling, CAD drafting, BIM rebar detailing, and Primavera P6 project control deliverables.">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ahmed Nabil Mahmoud Hassan Youssef",
+      "alternateName": ["Ahmed Nabil", "Eng. Ahmed Nabil"],
+      "jobTitle": "Civil & Project Controls Engineer",
+      "email": "mailto:mypc1239@outlook.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Alexandria",
+        "addressCountry": "Egypt"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Arab Academy for Science, Technology & Maritime Transport (AASTMT)"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Graduate Member of the Institution of Civil Engineers (GMICE)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Registered Civil Engineer - Egyptian Syndicate of Engineers"
+        }
+      ],
+      "knowsAbout": [
+        "Civil Engineering",
+        "Structural Engineering",
+        "Project Controls",
+        "Primavera P6",
+        "AutoCAD Drafting",
+        "Earned Value Management",
+        "Cash Flow Forecasting",
+        "Autodesk Revit",
+        "Autodesk Robot Structural Analysis",
+        "PLAXIS 3D"
+      ],
+      "url": "https://ahmednabilcivilengineer.github.io/Construction/"
+    }
+    </script>
+
     <style>
-        @page {
-            size: A4 portrait;
-            margin: 10mm 12mm;
+        :root {
+            --primary: #1e293b;
+            --accent: #2563eb;
+            --accent-light: #dbeafe;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --text-light: #64748b;
+            --border: #e2e8f0;
         }
 
         * {
             box-sizing: border-box;
-        }
-
-        html, body {
-            width: 100%;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
-            color: #111111;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 8.5pt;
-            line-height: 1.3;
-            -webkit-print-color-adjust: exact;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 10px 20px;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
         }
 
         header {
+            background: var(--primary);
+            color: white;
+            padding: 3.5rem 1rem 2.5rem;
             text-align: center;
-            border-bottom: 1.5pt solid #222222;
-            padding-bottom: 4px;
-            margin-bottom: 8px;
         }
 
-        h1 {
-            font-size: 13.5pt;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin: 0 0 2px 0;
-            letter-spacing: 0.5px;
-            color: #000000;
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
-        .subtitle {
-            font-size: 9.5pt;
-            font-weight: bold;
-            color: #333333;
-            margin-bottom: 3px;
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            background-color: #cbd5e1;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+
+        header p.subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            max-width: 700px;
+        }
+
+        .header-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .badge-pill {
+            background: rgba(37, 99, 235, 0.2);
+            color: #93c5fd;
+            border: 1px solid rgba(147, 197, 253, 0.3);
+            font-size: 0.85rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 500;
         }
 
         .contact-info {
-            font-size: 8.5pt;
-            color: #222222;
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 0.8rem;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        .section-heading {
-            font-size: 9.5pt;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-bottom: 1pt solid #333333;
-            margin-top: 8px;
-            margin-bottom: 4px;
-            padding-bottom: 1px;
-            color: #000000;
+        .email-link {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
         }
 
-        p {
-            margin: 0 0 4px 0;
-            font-size: 8.5pt;
-            text-align: justify;
+        .email-link:hover {
+            color: #93c5fd;
+            text-decoration: underline;
         }
 
-        .entry {
-            margin-bottom: 5px;
+        .container {
+            max-width: 1100px;
+            margin: 2.5rem auto;
+            padding: 0 1.2rem;
         }
 
-        .entry-header {
+        .section-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 0.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cv-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.8rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+            border: 1px solid var(--border);
+        }
+
+        .summary-text {
+            font-size: 1.05rem;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* Timeline & Credentials */
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .timeline-item {
+            border-left: 3px solid var(--accent);
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .timeline-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-top: 3px;
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
 
-        .entry-title {
-            font-size: 8.5pt;
+        .timeline-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+            background: var(--accent-light);
+            padding: 0.1rem 0.6rem;
+            border-radius: 4px;
+        }
+
+        .timeline-org {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        .timeline-desc {
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .timeline-desc ul {
+            padding-left: 1.2rem;
+            margin-top: 0.4rem;
+        }
+
+        .timeline-desc li {
+            margin-bottom: 0.3rem;
+        }
+
+        /* Skill Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.2rem;
+        }
+
+        .skill-group {
+            background: var(--bg);
+            padding: 1.2rem;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+
+        .skill-group h4 {
+            color: var(--primary);
+            font-size: 1rem;
+            margin-bottom: 0.6rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.3rem;
+        }
+
+        .skill-group p {
+            font-size: 0.92rem;
+            color: var(--text);
+        }
+
+        .software-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .tag {
+            background: #e2e8f0;
+            color: var(--primary);
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+        }
+
+        /* Portfolio Image Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid var(--border);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border);
+            background-color: #cbd5e1;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .card img:hover {
+            opacity: 0.9;
+        }
+
+        .card-content {
+            padding: 1.2rem;
+        }
+
+        .card-tag {
+            background: var(--accent-light);
+            color: var(--accent);
+            font-size: 0.8rem;
             font-weight: bold;
-            color: #000000;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            text-transform: uppercase;
         }
 
-        .entry-date {
-            font-size: 8.5pt;
+        .card h3 {
+            margin: 0.6rem 0 0.4rem 0;
+            color: var(--primary);
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .watermark-notice {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #e2e8f0;
+            border-radius: 6px;
+        }
+
+        /* Lightbox Modal */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.92);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 6px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            object-fit: contain;
+        }
+
+        .lightbox-caption {
+            color: #f8fafc;
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            color: #ffffff;
+            font-size: 2.5rem;
             font-weight: bold;
-            color: #000000;
-            white-space: nowrap;
+            cursor: pointer;
+            transition: color 0.2s ease;
         }
 
-        .entry-subtitle {
-            font-size: 8.5pt;
-            font-style: italic;
-            color: #333333;
-            margin-bottom: 2px;
+        .lightbox-close:hover {
+            color: #60a5fa;
         }
 
-        ul {
-            margin: 0 0 4px 0;
-            padding-left: 15px;
+        footer {
+            text-align: center;
+            padding: 1.8rem;
+            background: var(--primary);
+            color: white;
+            font-size: 0.85rem;
+            margin-top: 3rem;
         }
 
-        li {
-            font-size: 8.5pt;
-            margin-bottom: 2px;
+        footer a {
+            color: #94a3b8;
+            text-decoration: none;
         }
 
-        .skills-list p {
-            margin-bottom: 3px;
-            font-size: 8.5pt;
-        }
-
-        .page-break {
-            page-break-before: always;
-            break-before: page;
-        }
-
-        @media print {
-            body {
-                max-width: 100%;
-                padding: 0;
-            }
+        footer a:hover {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
 
-    <!-- ================= PAGE 1 ================= -->
     <header>
-        <h1>Eng. Ahmed Nabil, GMICE</h1>
-        <div class="subtitle">Civil &amp; Project Controls Engineer</div>
-        <div class="contact-info">
-            Alexandria, Egypt | Email: mypc1239@outlook.com
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Ahmed Nabil Mahmoud Hassan Youssef" class="profile-pic">
+            <div>
+                <h1>Eng. Ahmed Nabil, GMICE</h1>
+                <p class="subtitle">Civil & Project Controls Engineer | Structural Engineering, Primavera P6 & BIM</p>
+                
+                <div class="header-badges">
+                    <span class="badge-pill">GMICE (ICE, UK)</span>
+                    <span class="badge-pill">Registered Civil Engineer (Egypt)</span>
+                    <span class="badge-pill">Danish B.Eng. Equivalent</span>
+                </div>
+
+                <div class="contact-info">
+                    <span>📍 Alexandria, Egypt</span>
+                    <span>✉ <a href="mailto:mypc1239@outlook.com" class="email-link">mypc1239@outlook.com</a></span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- PROFESSIONAL SUMMARY -->
-    <section>
-        <div class="section-heading">Professional Summary</div>
-        <p>
-            Detail-oriented Civil &amp; Project Controls Engineer, registered professional with the Egyptian Syndicate of Engineers, and Graduate Member of the Institution of Civil Engineers (GMICE). Specializing in integrated project management, Primavera P6 baseline scheduling, Earned Value Analysis (EVA), and BIM structural modeling. Proven track record in executing structural finite element analysis, 3D rebar detailing, and financial cash flow forecasting. Adept at bridging structural design precision with robust cost engineering and schedule controls to ensure deliverable accuracy and project profitability.
-        </p>
-    </section>
+    <div class="container">
+        
+        <!-- SECTION: PROFESSIONAL SUMMARY -->
+        <div class="section-header">
+            <h2 class="section-title">Professional Summary</h2>
+        </div>
+        <div class="cv-card">
+            <p class="summary-text">
+                Detail-oriented Civil & Project Controls Engineer, registered professional with the Egyptian Syndicate of Engineers, and Graduate Member of the Institution of Civil Engineers (GMICE). Specializing in integrated project management, Primavera P6 baseline scheduling, Earned Value Analysis (EVA), and BIM structural modeling. Proven track record in executing structural finite element analysis, 3D rebar detailing, and financial cash flow forecasting. Adept at bridging structural design precision with robust cost engineering and schedule controls to ensure deliverable accuracy and project profitability.
+            </p>
+        </div>
 
-    <!-- PROFESSIONAL MEMBERSHIPS & CREDENTIALS -->
-    <section>
-        <div class="section-heading">Professional Memberships &amp; Credentials</div>
+        <!-- SECTION: PROFESSIONAL MEMBERSHIPS & CREDENTIALS -->
+        <div class="section-header">
+            <h2 class="section-title">Memberships & Credentials</h2>
+        </div>
+        <div class="cv-card">
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">Graduate Member of the Institution of Civil Engineers (GMICE)</span>
+                        <span class="timeline-date">October 2025</span>
+                    </div>
+                    <div class="timeline-org">Institution of Civil Engineers (ICE), UK</div>
+                    <div class="timeline-desc">
+                        Fully meets the educational base requirements for future admission as Member (MICE) / Chartered / Incorporated Engineer registration.
+                    </div>
+                </div>
 
-        <div class="entry">
-            <div class="entry-header">
-                <div class="entry-title">Registered Civil Engineer</div>
-                <div class="entry-date">2025</div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">International Qualification Assessment</span>
+                        <span class="timeline-date">February 2026</span>
+                    </div>
+                    <div class="timeline-org">Danish Agency for Higher Education and Science</div>
+                    <div class="timeline-desc">
+                        Official Danish credential assessment confirming qualification comparability to a Danish Bachelor of Engineering in Civil Engineering (dansk professionsbacheloruddannelse til diplomingeniør - bygning).
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">Registered Civil Engineer</span>
+                        <span class="timeline-date">2025</span>
+                    </div>
+                    <div class="timeline-org">Egyptian Syndicate of Engineers - Civil Engineering Division (Alexandria Branch)</div>
+                    <div class="timeline-desc">
+                        Licensed professional civil engineering status in Egypt.
+                    </div>
+                </div>
+
             </div>
-            <div class="entry-subtitle">Egyptian Syndicate of Engineers - Civil Engineering Division (Alexandria Branch)</div>
-            <ul>
-                <li>Licensed professional civil engineering status in Egypt.</li>
-            </ul>
         </div>
 
-        <div class="entry">
-            <div class="entry-header">
-                <div class="entry-title">Graduate Member of the Institution of Civil Engineers (GMICE)</div>
-                <div class="entry-date">October 2025</div>
+        <!-- SECTION: CORE COMPETENCIES & TECHNICAL SKILLS -->
+        <div class="section-header">
+            <h2 class="section-title">Core Competencies & Technical Skills</h2>
+        </div>
+        <div class="cv-card">
+            <div class="skills-grid">
+                
+                <div class="skill-group">
+                    <h4>Project Controls & Planning</h4>
+                    <p>Primavera P6 (WBS & CPM Scheduling), Earned Value Management (EVA S-Curves), Cost Engineering, Monthly Cash Flow Forecasting.</p>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Structural Analysis & BIM</h4>
+                    <p>Finite Element Method (FEM) Modeling, Flat Slab Punching Shear Analysis, 3D Rebar Detailing, Foundation Framing, PLAXIS 3D Analysis.</p>
+                </div>
+
+                <div class="skill-group">
+                    <h4>CAD & Technical Drafting</h4>
+                    <p>AutoCAD Structural Detailing, Grid Axis Layouts, Reinforcement Plans & Schedules.</p>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Software Applications</h4>
+                    <div class="software-tags">
+                        <span class="tag">Primavera P6</span>
+                        <span class="tag">Autodesk Revit</span>
+                        <span class="tag">Autodesk Robot Analysis</span>
+                        <span class="tag">PLAXIS 3D V22</span>
+                        <span class="tag">AutoCAD</span>
+                        <span class="tag">MS Excel (Cost Matrices)</span>
+                    </div>
+                </div>
+
             </div>
-            <div class="entry-subtitle">Institution of Civil Engineers (ICE), UK</div>
-            <ul>
-                <li>Fully meets the educational base requirements for future admission as Member (MICE) / Chartered / Incorporated Engineer registration.</li>
-            </ul>
         </div>
 
-        <div class="entry">
-            <div class="entry-header">
-                <div class="entry-title">International Qualification Assessment</div>
-                <div class="entry-date">February 2026</div>
+        <!-- SECTION: TECHNICAL EXPERIENCE & ACADEMIC PROJECTS -->
+        <div class="section-header">
+            <h2 class="section-title">Engineering Experience & Technical Projects</h2>
+        </div>
+        <div class="cv-card">
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">Geotechnical Site Investigation & Foundation Design Project</span>
+                        <span class="timeline-date">Feb 2025</span>
+                    </div>
+                    <div class="timeline-org">Senior Graduation Project | Grade: Excellent | AASTMT - Dept. of Construction & Building Engineering</div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Analyzed soil borehole data and laboratory test results to evaluate ground conditions.</li>
+                            <li>Calculated building loads and designed deep pile foundations to ensure structural stability.</li>
+                            <li>Designed concrete foundations, pile caps, and columns against bending and shear forces.</li>
+                            <li>Modeled ground improvement techniques using stone columns in PLAXIS 3D to reduce soil settlement and increase strength.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">Project Control, Planning & Cost Management Deliverables</span>
+                        <span class="timeline-date">Project Controls Specialist</span>
+                    </div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li><strong>Earned Value Analysis (EVA):</strong> Developed baseline performance tracking tools utilizing Planned Value (PV), Earned Value (EV), and Actual Cost (AC) metrics to generate accurate S-Curves and Variance Indexes (CPI/SPI).</li>
+                            <li><strong>Cost Engineering & Monitoring:</strong> Structured cumulative weekly cost matrices across primary construction activity packages to track direct/indirect expenses against budgetary baselines.</li>
+                            <li><strong>Cash Flow Forecasting:</strong> Formulated monthly cash flow projections and working capital models to optimize net cash positions during project execution.</li>
+                            <li><strong>Primavera P6 Scheduling:</strong> Built logic-driven Critical Path Method (CPM) networks, Gantt charts, and Work Breakdown Structures (WBS) covering civil, architectural, and MEP trades.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">Structural Design, BIM & Technical Drafting</span>
+                        <span class="timeline-date">Structural & BIM Deliverables</span>
+                    </div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li><strong>Structural Analysis (Autodesk Robot):</strong> Executed multi-story 3D frame modeling and finite element analysis (FEM) to verify vertical and lateral load pathways; performed ultimate punching shear analysis on flat slab systems.</li>
+                            <li><strong>BIM Modeling & Rebar Detailing (Autodesk Revit):</strong> Modeled deep and shallow foundation systems (isolated footings, pile caps, tie beams); generated 3D rebar cages, column starter bar anchorage nodes, and concrete shear cores.</li>
+                            <li><strong>CAD Drafting (AutoCAD):</strong> Produced precise AutoCAD structural plan sets, column grid axes, dimensional layouts, and top/bottom slab reinforcement distribution drawings.</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-            <div class="entry-subtitle">Danish Agency for Higher Education and Science</div>
-            <ul>
-                <li>Official Danish credential assessment confirming qualification comparability to a Danish Bachelor of Engineering in Civil Engineering (dansk professionsbacheloruddannelse til diplomingeniør - bygning).</li>
-            </ul>
         </div>
-    </section>
 
-    <!-- CORE COMPETENCIES & TECHNICAL SKILLS -->
-    <section>
-        <div class="section-heading">Core Competencies &amp; Technical Skills</div>
-        <div class="skills-list">
-            <p><strong>Project Controls &amp; Planning:</strong> Primavera P6 (WBS &amp; CPM Scheduling), Earned Value Management (EVA S-Curves), Cost Engineering, Monthly Cash Flow Forecasting.</p>
-            <p><strong>Structural Analysis &amp; BIM:</strong> Finite Element Method (FEM) Modeling, Flat Slab Punching Shear Analysis, 3D Rebar Detailing, Foundation Framing, PLAXIS 3D Analysis.</p>
-            <p><strong>CAD &amp; Technical Drafting:</strong> AutoCAD Structural Detailing, Grid Axis Layouts, Reinforcement Plans &amp; Schedules.</p>
-            <p><strong>Software Applications:</strong> Primavera P6, Autodesk Revit, Autodesk Robot Structural Analysis, PLAXIS 3D V22, AutoCAD, MS Excel (Cost &amp; Financial Matrices).</p>
+        <!-- SECTION: EDUCATION -->
+        <div class="section-header">
+            <h2 class="section-title">Education & Qualifications</h2>
         </div>
-    </section>
+        <div class="cv-card">
+            <div class="timeline">
 
-    <!-- ================= PAGE 2 ================= -->
-    <div class="page-break"></div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">Bachelor Degree in Construction and Building Engineering</span>
+                        <span class="timeline-date">Graduated Jan 2025</span>
+                    </div>
+                    <div class="timeline-org">Arab Academy for Science, Technology & Maritime Transport (AASTMT) - Alexandria, Egypt</div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li><strong>GPA:</strong> 2.9 / 4.0 ("Good").</li>
+                            <li><strong>Accreditation:</strong> Accredited by the Engineering Accreditation Commission (EAC) of ABET under Construction Engineering program criteria.</li>
+                            <li><strong>Coursework:</strong> 5-Year engineering curriculum covering structural analysis, reinforced concrete design, project planning, cost control, and BIM application.</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <!-- ENGINEERING PROJECTS & TECHNICAL EXPERIENCE -->
-    <section>
-        <div class="section-heading">Engineering Projects &amp; Technical Experience</div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <span class="timeline-title">American High School Diploma & SAT Credentials</span>
+                        <span class="timeline-date">Graduated Jun 2019</span>
+                    </div>
+                    <div class="timeline-org">Alexandria Private Language School - American Division</div>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li><strong>GPA:</strong> 3.4 / 4.0.</li>
+                            <li><strong>College Board SAT I:</strong> Total Score 1280 (Math: 770, Evidence-Based Reading & Writing: 510).</li>
+                            <li><strong>SAT Subject Tests:</strong> Math Level 1 (680) and Physics (680).</li>
+                            <li><strong>Authentication:</strong> Authenticated by AMIDEAST and verified by the Egyptian Ministry of Foreign Affairs.</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div class="entry">
-            <div class="entry-header">
-                <div class="entry-title">Geotechnical Site Investigation &amp; Foundation Design Project</div>
-                <div class="entry-date">Feb 2025</div>
             </div>
-            <div class="entry-subtitle">Senior Graduation Project | Grade: Excellent | AASTMT - Dept. of Construction &amp; Building Engineering</div>
-            <ul>
-                <li>Analyzed soil borehole data and laboratory test results to evaluate ground conditions.</li>
-                <li>Calculated building loads and designed deep pile foundations to ensure structural stability.</li>
-                <li>Designed concrete foundations, pile caps, and columns against bending and shear forces.</li>
-                <li>Modeled ground improvement techniques using stone columns in PLAXIS 3D to reduce soil settlement and increase strength.</li>
-            </ul>
         </div>
 
-        <div class="entry">
-            <div class="entry-header">
-                <div class="entry-title">Project Control, Planning &amp; Cost Management Deliverables</div>
+        <!-- SECTION: PROJECT CONTROL SHOWCASE -->
+        <div class="section-header">
+            <h2 class="section-title">Project Control, Planning & Cost Management Showcase</h2>
+        </div>
+        <div class="grid">
+            
+            <div class="card">
+                <img src="1.jpeg" alt="Earned Value Analysis (EVA) S-Curve">
+                <div class="card-content">
+                    <span class="card-tag">Project Control</span>
+                    <h3>Earned Value Analysis (EVA) S-Curve</h3>
+                    <p>Planned Value, Earned Value, Actual Cost, and performance tracking metrics.</p>
+                </div>
             </div>
-            <div class="entry-subtitle">Project Controls Specialist</div>
-            <ul>
-                <li><strong>Earned Value Analysis (EVA):</strong> Developed baseline performance tracking tools utilizing Planned Value (PV), Earned Value (EV), and Actual Cost (AC) metrics to generate accurate S-Curves and Variance Indexes (CPI/SPI).</li>
-                <li><strong>Cost Engineering &amp; Monitoring:</strong> Structured cumulative weekly cost matrices across primary construction activity packages to track direct/indirect expenses against budgetary baselines.</li>
-                <li><strong>Cash Flow Forecasting:</strong> Formulated monthly cash flow projections and working capital models to optimize net cash positions during project execution.</li>
-                <li><strong>Primavera P6 Scheduling:</strong> Built logic-driven Critical Path Method (CPM) networks, Gantt charts, and Work Breakdown Structures (WBS) covering civil, architectural, and MEP trades.</li>
-            </ul>
-        </div>
 
-        <div class="entry">
-            <div class="entry-header">
-                <div class="entry-title">Structural Design, BIM &amp; Technical Drafting</div>
+            <div class="card">
+                <img src="2.jpeg" alt="Earned Value (EV) & Actual Cost Matrix">
+                <div class="card-content">
+                    <span class="card-tag">Cost Engineering</span>
+                    <h3>Earned Value (EV) & Actual Cost Matrix</h3>
+                    <p>Cumulative weekly performance metrics across major construction activities.</p>
+                </div>
             </div>
-            <div class="entry-subtitle">Structural &amp; BIM Engineering Deliverables</div>
-            <ul>
-                <li><strong>Structural Analysis (Autodesk Robot):</strong> Executed multi-story 3D frame modeling and finite element analysis (FEM) to verify vertical and lateral load pathways; performed ultimate punching shear analysis on flat slab systems.</li>
-                <li><strong>BIM Modeling &amp; Rebar Detailing (Autodesk Revit):</strong> Modeled deep and shallow foundation systems (isolated footings, pile caps, tie beams); generated 3D rebar cages, column starter bar anchorage nodes, and concrete shear cores.</li>
-                <li><strong>CAD Drafting (AutoCAD):</strong> Produced precise AutoCAD structural plan sets, column grid axes, dimensional layouts, and top/bottom slab reinforcement distribution drawings.</li>
-            </ul>
-        </div>
-    </section>
 
-    <!-- EDUCATION -->
-    <section>
-        <div class="section-heading">Education</div>
-
-        <div class="entry">
-            <div class="entry-header">
-                <div class="entry-title">Bachelor Degree in Construction and Building Engineering</div>
-                <div class="entry-date">Graduated Jan 2025</div>
+            <div class="card">
+                <img src="4.jpeg" alt="Monthly Cash Flow Forecast">
+                <div class="card-content">
+                    <span class="card-tag">Cost Control</span>
+                    <h3>Monthly Cash Flow Forecast</h3>
+                    <p>Financial baseline tracking direct/indirect costs and net cash positions.</p>
+                </div>
             </div>
-            <div class="entry-subtitle">Arab Academy for Science, Technology &amp; Maritime Transport (AASTMT) - Alexandria, Egypt</div>
-            <ul>
-                <li><strong>GPA:</strong> 2.9 / 4.0 ("Good").</li>
-                <li><strong>Accreditation:</strong> Accredited by the Engineering Accreditation Commission (EAC) of ABET under Construction Engineering program criteria.</li>
-                <li><strong>Coursework:</strong> 5-Year engineering curriculum covering structural analysis, reinforced concrete design, project planning, cost control, and BIM application.</li>
-            </ul>
+
+            <div class="card">
+                <img src="19.jpeg" alt="Work Breakdown Structure (WBS)">
+                <div class="card-content">
+                    <span class="card-tag">Primavera P6</span>
+                    <h3>Work Breakdown Structure (WBS)</h3>
+                    <p>Baseline schedule breakdown of architectural and MEP activities.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="20.jpeg" alt="Critical Path Method (CPM) Schedule">
+                <div class="card-content">
+                    <span class="card-tag">Primavera P6</span>
+                    <h3>Critical Path Method (CPM) Schedule</h3>
+                    <p>Logic-driven schedule network, Gantt chart, and task dependencies.</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="entry">
-            <div class="entry-header">
-                <div class="entry-title">American High School Diploma &amp; SAT Credentials</div>
-                <div class="entry-date">Graduated Jun 2019</div>
-            </div>
-            <div class="entry-subtitle">Alexandria Private Language School - American Division</div>
-            <ul>
-                <li><strong>GPA:</strong> 3.4 / 4.0.</li>
-                <li><strong>College Board SAT I:</strong> Total Score 1280 (Math: 770, Evidence-Based Reading &amp; Writing: 510).</li>
-                <li><strong>SAT Subject Tests:</strong> Math Level 1 (680) and Physics (680).</li>
-                <li><strong>Authentication:</strong> Authenticated by AMIDEAST and verified by the Egyptian Ministry of Foreign Affairs.</li>
-            </ul>
+        <!-- SECTION: STRUCTURAL ANALYSIS SHOWCASE -->
+        <div class="section-header">
+            <h2 class="section-title">Structural Analysis & Design (Autodesk Robot)</h2>
         </div>
-    </section>
+        <div class="grid">
+
+            <div class="card">
+                <img src="3.jpeg" alt="Flat Slab Punching Shear Analysis">
+                <div class="card-content">
+                    <span class="card-tag">Robot Analysis</span>
+                    <h3>Flat Slab Punching Shear Analysis</h3>
+                    <p>Verification of ultimate punching shear forces and reinforcement checks.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="21.jpeg" alt="Robot Structural Analysis Frame Model">
+                <div class="card-content">
+                    <span class="card-tag">Robot Analysis</span>
+                    <h3>Multi-Story Frame Structural Analysis</h3>
+                    <p>3D Finite Element Method (FEM) modeling and structural frame analysis.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECTION: STRUCTURAL & CAD DRAFTING SHOWCASE -->
+        <div class="section-header">
+            <h2 class="section-title">Structural & AutoCAD Drafting</h2>
+        </div>
+        <div class="grid">
+
+            <div class="card">
+                <img src="23.jpeg" alt="Slab Reinforcement Layout & Grid Plan">
+                <div class="card-content">
+                    <span class="card-tag">AutoCAD</span>
+                    <h3>Slab Reinforcement Layout & Grid Plan</h3>
+                    <p>Detailed structural CAD drawing displaying column grid axes, dimensions, and top/bottom reinforcement distribution.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECTION: BIM MODELING SHOWCASE -->
+        <div class="section-header">
+            <h2 class="section-title">Structural Modeling & Rebar Detailing (Autodesk Revit)</h2>
+        </div>
+        <div class="grid">
+
+            <div class="card">
+                <img src="5.jpeg" alt="Low-Rise Structural Frame Model">
+                <div class="card-content">
+                    <span class="card-tag">Structural Frame</span>
+                    <h3>Low-Rise Structural Frame Model</h3>
+                    <p>Clean structural frame visualization and floor plate layout.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="6.jpeg" alt="Multi-Story Commercial Building Frame">
+                <div class="card-content">
+                    <span class="card-tag">Building BIM</span>
+                    <h3>Multi-Story Commercial Building Frame</h3>
+                    <p>3D structural model highlighting primary vertical load paths.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="22.jpeg" alt="Autodesk Revit 3D Structural View">
+                <div class="card-content">
+                    <span class="card-tag">Building BIM</span>
+                    <h3>3D Building Framing Perspective</h3>
+                    <p>Full 3D structural model showcasing core walls, floor slabs, and column grids.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="7.jpeg" alt="4-Story Concrete Structural Skeleton">
+                <div class="card-content">
+                    <span class="card-tag">3D Frame</span>
+                    <h3>4-Story Concrete Structural Skeleton</h3>
+                    <p>Perspective view of cast-in-place columns, beams, and slab systems.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="8.jpeg" alt="4-Story Concrete Frame (Slab Perspective)">
+                <div class="card-content">
+                    <span class="card-tag">3D Frame</span>
+                    <h3>4-Story Concrete Frame (Slab Perspective)</h3>
+                    <p>Underside framing angle showcasing floor slab profiles.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="9.jpeg" alt="Full Pad Footing & Rebar Grid">
+                <div class="card-content">
+                    <span class="card-tag">Revit Structure</span>
+                    <h3>Full Pad Footing & Rebar Grid</h3>
+                    <p>Substructure layout showing pad footing reinforcement matrix.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="10.jpeg" alt="Foundation Tie Beam & Rebar Junctions">
+                <div class="card-content">
+                    <span class="card-tag">Revit Structure</span>
+                    <h3>Foundation Tie Beam & Rebar Junctions</h3>
+                    <p>3D detailing of intersecting reinforced concrete beams and column ties.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="11.jpeg" alt="Tie Beam & Column Starter Bar Node">
+                <div class="card-content">
+                    <span class="card-tag">Revit Structure</span>
+                    <h3>Tie Beam & Column Starter Bar Node</h3>
+                    <p>Close-up 3D rebar detailing at critical structural connections.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="12.jpeg" alt="Deep Foundation Framing Layout - View 1">
+                <div class="card-content">
+                    <span class="card-tag">Foundation Engineering</span>
+                    <h3>Deep Foundation Framing Layout - View 1</h3>
+                    <p>Isometric view of pile caps and subterranean ground tie beams.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="13.jpeg" alt="Deep Foundation Framing Layout - View 2">
+                <div class="card-content">
+                    <span class="card-tag">Foundation Engineering</span>
+                    <h3>Deep Foundation Framing Layout - View 2</h3>
+                    <p>Perspective rendering highlighting stub column spatial alignment.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="14.jpeg" alt="Deep Foundation Framing Layout - View 3">
+                <div class="card-content">
+                    <span class="card-tag">Foundation Engineering</span>
+                    <h3>Deep Foundation Framing Layout - View 3</h3>
+                    <p>Substructure model highlighting pile cap grid matrix.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="15.jpeg" alt="Deep Foundation Framing Layout - View 4">
+                <div class="card-content">
+                    <span class="card-tag">Foundation Engineering</span>
+                    <h3>Deep Foundation Framing Layout - View 4</h3>
+                    <p>Alternative angle showing underground beam tie integration.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="16.jpeg" alt="Concrete Shear Core & Staircase Model">
+                <div class="card-content">
+                    <span class="card-tag">Vertical Circulation</span>
+                    <h3>Concrete Shear Core & Staircase Model</h3>
+                    <p>Revit 3D model of monolithic stairwell and core walls.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="17.jpeg" alt="Isolated Footing & Column Rebar Cage">
+                <div class="card-content">
+                    <span class="card-tag">Revit Structure</span>
+                    <h3>Isolated Footing & Column Rebar Cage</h3>
+                    <p>3D detailing of footing mats and vertical column ties.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="18.jpeg" alt="Column Tie Bar Detailing">
+                <div class="card-content">
+                    <span class="card-tag">Revit Structure</span>
+                    <h3>Column Tie Bar Detailing</h3>
+                    <p>Detailed view of column starter bars and foundation anchorage.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="watermark-notice">
+            🔒 <strong>Confidentiality Notice:</strong> Selected engineering deliverables, structural modeling, and project control samples prepared during professional practice. Sensitive project data has been anonymized for confidentiality.
+        </div>
+
+    </div>
+
+    <!-- Image Modal/Lightbox -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" alt="Expanded project view">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <footer>
+        &copy; 2026 Eng. Ahmed Nabil Mahmoud Hassan Youssef, GMICE | <a href="mailto:mypc1239@outlook.com">mypc1239@outlook.com</a>. All rights reserved.
+    </footer>
+
+    <script>
+        const modal = document.getElementById('lightboxModal');
+        const modalImg = document.getElementById('lightboxImg');
+        const modalCaption = document.getElementById('lightboxCaption');
+        const closeBtn = document.getElementById('lightboxClose');
+        const cardImages = document.querySelectorAll('.card img');
+
+        cardImages.forEach(img => {
+            img.addEventListener('click', () => {
+                modal.classList.add('active');
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                
+                const cardTitle = img.nextElementSibling ? img.nextElementSibling.querySelector('h3').innerText : img.alt;
+                modalCaption.innerText = cardTitle;
+            });
+        });
+
+        const closeModal = () => modal.classList.remove('active');
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
 
 </body>
 </html>
