@@ -1,0 +1,10 @@
+# Allow ChatGPT search bot and user link-pasting to index the site
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Allow standard search engine bots
+User-agent: *
+Allow: /
